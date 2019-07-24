@@ -1,5 +1,5 @@
 <!-- INICIO BANNER PRINCIPAL -->
-<div class="carousel">
+<div class="banner-carousel">
   <div id="main-banner" style="background: url(<%= image_path('banner-02.svg') %>); background-position: 16% 0%;">
     <div class="product-title">
       <p class="slogan">The Intelligent construction choice</p>
@@ -23,12 +23,25 @@
       <p class="more-info">SAIBA MAIS</p>
     </div>
   </div>
-  <div id="main-banner" style="background: url(<%= image_path('banner-03.png') %>); background-position: center;">
-    <p>Precisamos adotar uma visão holística... e explorar os materiais com novos olhos, criando edifícios com módulos que se complementam e otimizando a interação entre cada componente.</p>
-    <h3>Prof. Oliver Vassart</h3>
-    <p>Chief Executive Officer Steligence®</p>
-    <div class="button-position" >
-      <p class="more-info">SAIBA MAIS</p>
+  <div id="main-banner" style="background: url(<%= image_path('banner-03.png') %>); background-position: 60% 0;">
+    <div class="quote">
+      <p>Precisamos adotar uma visão holística... e explorar os materiais com novos olhos, criando edifícios com módulos que se complementam e otimizando a interação entre cada componente.</p>
+      <h5>Prof. Oliver Vassart</h5>
+      <p>Chief Executive Officer Steligence®</p>
+    </div>
+    <div class="button-position-quote" >
+      <p class="more-info-color">SAIBA MAIS</p>
+    </div>
+    <div class="space-line line-recolor" style="padding: 0; margin-top: 8%;">
+      <span></span>
+      <div></div>
+      <div></div>
+      <div class="large-drop"></div>
+      <span></span>
+      <div></div>
+      <span></span>
+      <div></div>
+      <div></div>
     </div>
   </div>
   <div id="main-banner" style="background: url(<%= image_path('banner-01.png') %>); background-position: 80% 0%;">
@@ -55,8 +68,42 @@
 <!-- FIM BANNER PRINCIPAL -->
 
 <!-- INICIO PILARES -->
-<div id="pilares">
+<div class="cornerstone-wrapper">
+  <%= image_tag('white-stripes.svg', class: "white-stripes") %>
+  <%= image_tag('orange-stripes.svg', class: "orange-stripes") %>
+  <div class="cornerstone-carousel">
+    <div id="pilares">
+      <div class="cornerstone-image-wrapper">
+        <%= image_tag('ambiental.png') %>
+      </div>
 
+      <p class="cornerstone-text">Avalia métricas ambientais e os aspectos ecológicos dos produtos e métodos utilizados na construção do empreendimento. Neste pilar, os indicadores de desempenho determinados pelo Steligence® são:</p>
+      <p class="cornerstone-topic">Eficiência Energética</p>
+      <p class="cornerstone-topic">Energia Renovável</p>
+      <p class="cornerstone-topic">Consumo de Recursos Naturais</p>
+      <p class="cornerstone-topic">Emissões Nocivas</p>
+      <p class="cornerstone-topic">Fim da vida do empreendimento e potenciais reutilizações e benefícios de reciclagem</p>
+    </div>
+    <div id="pilares">
+      <div class="cornerstone-image-wrapper">
+        <%= image_tag('economica.png') %>
+      </div>
+      <p class="cornerstone-text">Mensura os custos da construção e métricas de valores. No âmbito Econômico, o Steligence® determinou três indicadores de desempenho:</p>
+      <p class="cornerstone-topic">Custo do Ciclo de Vida - Antes da utilização e custo global do empreendimento</p>
+      <p class="cornerstone-topic">Velocidade da Construção</p>
+      <p class="cornerstone-topic">Qualidade da Construção</p>
+    </div>
+    <div id="pilares">
+      <div class="cornerstone-image-wrapper">
+        <%= image_tag('social.png') %>
+      </div>
+      <p class="cornerstone-text">Mensura a aceitação social e o bem-estar humano quanto à construção. Nesse quesito, o Steligence determinou os seguintes indicadores de desempenho:</p>
+      <p class="cornerstone-topic">Conforto Térmico</p>
+      <p class="cornerstone-topic">Conforto Acústico</p>
+      <p class="cornerstone-topic">Flexibilidade de Design</p>
+      <p class="cornerstone-topic">Segurança e Incômodo do Processo de Construção</p>
+    </div>
+  </div>
 </div>
 <!-- FIM PILARES -->
 
