@@ -155,7 +155,7 @@
 }
 
 .slick-dots{
-  bottom: 2%;
+  bottom: 16px;
 }
 
 .slick-dots li button:before{
@@ -202,8 +202,11 @@
  }
 }
 .cornerstone-topic{
+  display: inline-block;
   border-style: solid;
   border-radius: 8px;
+  padding: 2px;
+  margin: 6px;
   border-color: $steligence-gray;
   border-width: thin;
   color: $steligence-orange;
@@ -217,7 +220,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 16%;
+  margin: 16% 0;
 }
 .cornerstone-text{
   font-weight: lighter;
