@@ -3,9 +3,8 @@
   color: white;
   text-align: center;
   width: 100%;
-  height: 700px;
+  height: 600px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background: image-url('banner_1.png');
   background-size: cover !important;
   background-position: center center;
   display: flex;
@@ -14,11 +13,227 @@
   margin: 0;
   padding: 0;
 }
+
+.slogan{
+  margin-left: 124px;
+  margin-bottom: 0;
+  text-align: left;
+  width: 60px;
+  font-size: 12px;
+}
+
+.product-title{
+  padding: 0 14%;
+  margin-top: 8%;
+  width: 100%;
+  text-align: left;
+  h1{
+    position: relative;
+    font-weight: bold;
+  }
+}
+.registered{
+  position: absolute;
+  top: 4px;
+  left: 188px;
+  font-size: 12px;
+}
+.small-registered{
+  position: absolute;
+  top: 0;
+  left: 172px;
+  font-size: 12px;
+}
+
+.space-title{
+  margin-top: 16%;
+  margin-left: 28%;
+}
+
+.space-line{
+  display: flex;
+  justify-content: space-between;
+  margin: 4% 0;
+  padding: 0 14%;
+  div{
+    border-style: solid;
+    border-width: 3px;
+    height: 0;
+    width: 16px
+  }
+  span{
+    width: 24px;
+  }
+  .large-drop{
+    width: 72px;
+  }
+}
+
+.line-recolor{
+  div{
+    border-color: $steligence-orange;
+  }
+}
+
+.description-text{
+  text-align: justify;
+  word-spacing: 0;
+  padding: 0 14%;
+  font-size: 12px;
+}
+
+.quote{
+  margin-top: 12%;
+  margin-left: 50%;
+  text-align: right;
+  width: 50%;
+  padding-right: 7%;
+  color: $steligence-gray;
+  h5{
+    color: $steligence-orange;
+    font-size: 1.1rem;
+  }
+  p:last-of-type{
+    font-size: 10px;
+  }
+}
+
+.button-position{
+  padding: 0 14%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.more-info{
+  border-style: solid;
+  border-width: thin;
+  border-radius: 8px;
+  width: 120px;
+}
+
+.button-position-quote{
+  padding: 0 7%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.more-info-color{
+  border-style: solid;
+  border-width: thin;
+  border-radius: 8px;
+  width: 120px;
+  color: $steligence-gray;
+}
+
+.sub-header{
+  margin: 0 14%;
+  margin-top: 16%;
+  h5{
+    text-align: left;
+    position: relative;
+  }
+}
+
+// CAROUSEL
+.carousel{
+  width: 100%;
+}
+
+.slick-slider{
+  margin: 0;
+}
+
+.slick-arrow{
+  z-index: 1;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.slick-disabled{
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.slick-dots{
+  bottom: 16px;
+}
+
+.slick-dots li button:before{
+  color: white;
+  opacity: 1;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before{
+  color: $main-color;
+  opacity: 1;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+}
+
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  background: image-url('left-arrow.svg');
+  height: 30px;
+  width: 15px;
+}
+
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  background: image-url('right-arrow.svg');
+  height: 30px;
+  width: 15px;
+}
+
 // FIM BANNER PRINCIPAL -->
 
 // INICIO PILARES -->
 #pilares {
-
+ width: 100%;
+ text-align: center;
+ padding: 14%;
+ img{
+  width: 200px;
+ }
+}
+.cornerstone-topic{
+  display: inline-block;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 2px;
+  margin: 6px;
+  border-color: $steligence-gray;
+  border-width: thin;
+  color: $steligence-orange;
+  font-size: 14px;
+  font-weight: bold;
+}
+.cornerstone-wrapper{
+  position: relative;
+}
+.cornerstone-image-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 16% 0;
+}
+.cornerstone-text{
+  font-weight: lighter;
+}
+.white-stripes{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.orange-stripes{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 // FIM PILARES -->
 
