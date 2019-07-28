@@ -108,7 +108,56 @@
 <!-- FIM PILARES -->
 
 <!-- INICIO DIFERENCIAIS -->
-<div id="diferenciais">
+<% titles = [
+  'Otimização de espaço',
+  'Flexibilidade arquitetônica',
+  'Construção mais leve',
+  'Velocidade da construção',
+  'Menor custo do empreendimento',
+  'Redução de impactos ambientais',
+  'Aumento de pontuação em certificações',
+  'Logística de canteiro',
+  'Segurança de canteiro',
+  'Melhoria do conforto'
+]%>
+<% texts = [
+  'A utilização de sistemas construtivos, como a protensão, pode proporcionar redução nas dimensões de pilares e vigas, além das distâncias entre pavimentos, gerando mais espaço interno livre e economias significativas em elementos de fachada e revestimentos internos.',
+  'A aplicação estruturas mistas utilizando aços de alto desempenho (CIVIL 500) permite o aumento de vãos, ofertando uma maior flexibilidade e liberdade arquitetônica.',
+  'Menor peso do edifício atuando nas fundações quando aplicadas estruturas metálicas e vedações leves. Menos materiais promovem também redução de caminhões e tráfego na obra e em seu entorno.',
+  'Sistemas construtivos industrializados resultam em maior qualidade e rapidez na execução, geram menos resíduos e promovem a redução de custos.',
+  'Steligence® apresenta, através do comparativo entre sistemas construtivos qual tem o menor custo global de construção, podendo chegar a economias da ordem de 20%.',
+  'A utilização de materiais de alto desempenho contra a corrosão, como o Magnelis®, permite atingir reduções significativas de impactos ambientais e de custos de manutenção devido ao aumento de vida útil dos materiais.',
+  'A aplicação de produtos ArcelorMittal, com as respectivas Declarações Ambientais de produto tipo 3 (DAP), permite atender os requisitos das mais avançadas certificações ambientais como LEED, AQUA e BREEAM.',
+  'Soluções e métodos construtivos industrializados como armaduras pré-montadas reduzem a necessidade de espaço no canteiro de obras além de facilitar o planejamento e acompanhamento do cronograma de obras.',
+  'O uso de soluções como as Fôrmas incorporadas proporcionam mais segurança no canteiro da obra devido à diminuição de operações in loco e necessidade de menos mão de obra.',
+  'Coberturas e fachadas em aço em soluções isolantes termoacústicas oferecem maior conforto e menores gastos com energia.'
+]%>
+<div class="differential-wrapper">
+  <div class="differential-title">
+    <div class="differential-10">
+
+      <p>Principais diferenciais de uma obra com Steligence®</p>
+    </div>
+
+    <div>
+      <p>The Intelligent construction choice</p>
+      <p>Steligence <div>®</div></p>
+    </div>
+
+  </div>
+  <div class="differential-carousel">
+    <% (1..10).each do |number| %>
+      <div id="diferenciais">
+        <%= image_tag ("#{number}.png"), class: 'differential-image' %>
+        <p>
+          <%= titles[number - 1] %>
+        </p>
+        <p>
+          <%= texts[number - 1] %>
+        </p>
+      </div>
+    <% end %>
+  </div>
 </div>
 <!-- FIM DIFERENCIAIS -->
 

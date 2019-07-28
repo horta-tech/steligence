@@ -238,8 +238,39 @@
 // FIM PILARES -->
 
 // INICIO DIFERENCIAIS -->
-#diferenciais {
+.differential-wrapper{
+  background-image: image-url('background-differentials');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.differential-10{
+  height: 144px;
+  background-image: image-url('background-10');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.differential-title{
+  padding: 7%;
+  padding-bottom: 0;
+  display: flex;
+}
+
+#diferenciais {
+  padding: 14%;
+  width: 100%;
+  height: 600px;
+}
+
+.differential-carousel{
+}
+
+.differential-image{
+  width: 144px;
+  height: 144px;
+  object-fit: cover;
 }
 // FIM DIFERENCIAIS -->
 

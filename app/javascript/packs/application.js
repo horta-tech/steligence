@@ -18,3 +18,10 @@ $(".cornerstone-carousel").slick({
   nextArrow: "<div class='right-arrow'></div>",
   dots: false
 });
+
+$(".differential-carousel").slick({
+  infinite: false,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  dots: false
+});
