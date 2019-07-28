@@ -23,5 +23,14 @@ $(".differential-carousel").slick({
   infinite: false,
   slidesToShow: 2,
   slidesToScroll: 2,
+  arrows: false,
   dots: false
+});
+
+$(".testimonial-carousel").slick({
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true
 });

@@ -239,6 +239,8 @@
 
 // INICIO DIFERENCIAIS -->
 .differential-wrapper{
+  padding: 7%;
+  padding-bottom: 0;
   background-image: image-url('background-differentials');
   background-position: center center;
   background-repeat: no-repeat;
@@ -253,18 +255,24 @@
 }
 
 .differential-title{
-  padding: 7%;
   padding-bottom: 0;
   display: flex;
 }
 
 #diferenciais {
-  padding: 14%;
   width: 100%;
   height: 600px;
+  p{
+    width: 144px;
+  }
 }
 
-.differential-carousel{
+.differential-stripe{
+  margin-top: 8px;
+  width: 100%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: $steligence-orange;
 }
 
 .differential-image{
@@ -282,7 +290,7 @@
 
 // INICIO DEPOIMENTOS -->
 #depoimentos {
-
+  height: 600px;
 }
 // FIM DEPOIMENTOS -->
 
