@@ -133,26 +133,25 @@
   'Coberturas e fachadas em aço em soluções isolantes termoacústicas oferecem maior conforto e menores gastos com energia.'
 ]%>
 <div class="differential-wrapper">
-  <div class="differential-title">
+  <div class="differential-main-title">
     <div class="differential-10">
-
       <p>Principais diferenciais de uma obra com Steligence®</p>
     </div>
-
-    <div>
-      <p>The Intelligent construction choice</p>
-      <p>Steligence <div>®</div></p>
+    <div class="small-product-title">
+      <p class="small-slogan">The Intelligent construction choice</p>
+      <h1 class="small-product-name">Steligence
+        <div class="micro-registered">®</div>
+      </h1>
     </div>
-
   </div>
   <div class="differential-carousel">
     <% (1..10).each do |number| %>
       <div id="diferenciais">
         <%= image_tag ("#{number}.png"), class: 'differential-image' %>
-        <p>
+        <p class="differential-title">
           <%= titles[number - 1] %>
         </p>
-        <p>
+        <p class="differential-text">
           <%= texts[number - 1] %>
         </p>
       </div>

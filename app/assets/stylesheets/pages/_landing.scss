@@ -242,29 +242,70 @@
   padding: 7%;
   padding-bottom: 0;
   background-image: image-url('background-differentials');
-  background-position: center center;
+  background-position: 34% 80%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $steligence-light;
 }
 
 .differential-10{
+  margin-left: -8px;
   height: 144px;
   background-image: image-url('background-10');
   background-size: contain;
   background-repeat: no-repeat;
+  p{
+    line-height: 1.5rem;
+    font-size: 12px;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 100px;
+  }
 }
 
-.differential-title{
+.differential-main-title{
   padding-bottom: 0;
   display: flex;
+  justify-content: space-between;
+}
+
+.small-slogan{
+  margin: 0;
+  margin-left: 76px;
+  font-size: 8px;
+  width: 30px;
+  font-weight: bold;
+}
+
+.small-product-name{
+  font-size: 24px;
+  color: $steligence-orange;
+  position: relative;
+}
+
+.micro-registered{
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: -4px;
 }
 
 #diferenciais {
+  margin-top: 32px;
   width: 100%;
-  height: 600px;
+  height: 440px;
   p{
     width: 144px;
   }
+}
+
+.differential-title{
+  color: $steligence-orange;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.differential-text{
+  font-size: 12px;
 }
 
 .differential-stripe{
