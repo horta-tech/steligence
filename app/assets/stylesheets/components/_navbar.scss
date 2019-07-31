@@ -1,3 +1,34 @@
+.admin-navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(60, 60, 60, 1);
+  z-index: 500;
+  a {
+    text-decoration: none;
+    font-size: 0.8em;
+    font-size: 24px !important;
+    padding: 0 20px;
+    color: $white;
+    margin-right: 20px;
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+
+.logged-navbar {
+  top: 40px;
+}
+
+.logged-nav-wrapper {
+  height: 110px;
+  width: 100vw;
+}
+
 .navbar {
   height: 70px;
   position: fixed;
@@ -24,6 +55,7 @@
   height: 70px;
   width: 100vw;
 }
+
 
 .nav-item-logo {
   flex: 0 0 auto;

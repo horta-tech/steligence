@@ -22,6 +22,10 @@ gem 'mini_magick'
 gem 'fog-aws'
 gem 'jquery-slick-rails'
 
+gem 'highcharts-rails'
+gem "chartkick"
+gem "groupdate"
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

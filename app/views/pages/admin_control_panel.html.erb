@@ -1,1 +1,12 @@
-<h1>Admin's area</h1>
+<div class="container">
+  <h1 class="text-center">Admin's area</h1>
+  <h2>Dados de Leads cadastrados</h2>
+
+  <%= link_to "Relatorio de Leads em CSV", leads_path(format: "csv"), class: "btn btn-primary" %>
+  <%= link_to "Relatorio de Leads em Excel", leads_path(format: "xls"), class: "btn btn-success" %>
+  <br>
+  <br>
+    <h3> Gráfico de leads: </h3>
+    <%= area_chart Lead.group_by_day(:created_at).count, width: "100%", height: "500px" %>
+    <p>Total: <%= Lead.all.count %></p>
+</div>
