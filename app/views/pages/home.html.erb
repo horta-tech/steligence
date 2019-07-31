@@ -1,4 +1,5 @@
 <!-- INICIO BANNER PRINCIPAL -->
+<div class="steligence-container">
 <div class="banner-carousel">
   <div id="main-banner" style="background: url(<%= image_path('banner-02.svg') %>); background-position: 16% 0%;">
     <div class="product-title">
@@ -32,7 +33,10 @@
     <div class="button-position-quote" >
       <p class="more-info-color">SAIBA MAIS</p>
     </div>
-    <div class="space-line line-recolor" style="padding: 0; margin-top: 8%;">
+
+    <div class="spacer"></div>
+
+    <div class="space-line line-recolor" style="padding: 0;">
       <span></span>
       <div></div>
       <div></div>
@@ -43,6 +47,7 @@
       <div></div>
       <div></div>
     </div>
+
   </div>
   <div id="main-banner" style="background: url(<%= image_path('banner-01.png') %>); background-position: 80% 0%;">
     <div class="product-title space-title">
@@ -55,7 +60,10 @@
       <h5>Esolha Aço.</h5>
       <h5>Escolha Steligence<div class="registered small-registered">®</div>.</h5>
     </div>
-    <div class="space-line" style="padding: 0; margin-top: 16%;">
+
+    <div class="spacer"></div>
+
+    <div class="space-line" style="padding: 0;">
       <div class="large-drop"></div>
       <div></div>
       <div></div>
@@ -183,13 +191,12 @@
   </div>
 </div>
 
-
 <div class="catalog-text-box">
   <div class="catalog-intro show-layer">
-    <div class="small-product-title">
-      <p class="small-slogan">The Intelligent construction choice</p>
-      <h1 class="small-product-name">Steligence
-        <div class="micro-registered">®</div>
+    <div class="small-product-title" style="margin-left: 45%;">
+      <p class="small-slogan orange-color" style="margin-left: 128px; font-size: 10px;">The Intelligent construction choice</p>
+      <h1 class="small-product-name" style="font-size: 40px; position: relative;">Steligence
+        <div style="position: absolute; font-size: 12px; right: 20px; top: 0;">®</div>
       </h1>
     </div>
     <p>O Steligence® é a oportunidade de otimizar todos os aspectos de um projeto, comparando os principais métodos construtivos do mercado com as soluções Best-in-Class da ArcelorMittal, considerando todas as etapas construtivas.</p>
@@ -199,13 +206,7 @@
     <div class="catalog-description">
       <%= image_tag('square-fundacao') %>
       <p>Fundações e Contenções</p>
-      <div class="catalog-dash">
-        <div class="catalog-dash-line"></div>
-        <div class="catalog-dash-line"></div>
-        <div class="catalog-dash-line"></div>
-        <div class="catalog-dash-line"></div>
-        <div class="catalog-dash-line"></div>
-      </div>
+      <%= render 'dash_line', locals:{ color: 'fundacao' } %>
     </div>
     <div class="fundacao-carousel">
       <div>
@@ -227,6 +228,7 @@
     <div class="catalog-description">
       <%= image_tag('square-piso') %>
       <p>Piso</p>
+      <%= render 'dash_line', locals:{ color: 'piso' } %>
     </div>
     <div class="piso-carousel">
       <div>
@@ -244,6 +246,7 @@
     <div class="catalog-description">
       <%= image_tag('square-estrutura') %>
       <p>Estrutura</p>
+      <%= render 'dash_line', locals:{ color: 'estrutura' } %>
     </div>
     <div class="estrutura-carousel">
       <div>
@@ -261,6 +264,7 @@
     <div class="catalog-description">
       <%= image_tag('square-laje') %>
       <p>Laje</p>
+      <%= render 'dash_line', locals:{ color: 'laje' } %>
     </div>
     <div class="laje-carousel">
       <div>
@@ -282,6 +286,7 @@
     <div class="catalog-description">
       <%= image_tag('square-vedacao') %>
       <p>Vedação</p>
+      <%= render 'dash_line', locals:{ color: 'envelope' } %>
     </div>
     <div class="vedacao-carousel">
       <div>
@@ -299,6 +304,7 @@
     <div class="catalog-description">
       <%= image_tag('square-envelope') %>
       <p>Envelope</p>
+      <%= render 'dash_line', locals:{ color: 'envelope' } %>
     </div>
     <div class="envelope-carousel">
       <div>
@@ -315,17 +321,34 @@
       </div>
     </div>
   </div>
-
 </div>
 <!-- FIM CATALOGO -->
 
 <!-- INICIO DEPOIMENTOS -->
 <div class="testimonial-carousel">
-  <div id="depoimentos" style="background: url(<%= image_path('Wilmoff-JM') %>); background-position: center center;">
+  <div id="depoimentos" class="wilmotte">
+    <div>
+      <p>‘’O aço é a base da arquitetura hoje, a base da construção. Combinando as noções de solidez e modulação, possibilita que a edificação se desenvolva de forma rápida e eficiente’’.</p>
+      <div style="height: 130px;"></div>
+      <p class="deposition-name">Jean-Michel Wilmotte</p>
+      <p class="deposition-title">arquiteto / urbanista / designer </p>
+    </div>
   </div>
-  <div id="depoimentos" style="background: url(<%= image_path('Grohmann-M') %>); background-position: center center;">
+  <div id="depoimentos" class="grohmann">
+    <div>
+      <p>‘’Nós devemos quebrar as barreiras entre arquitetos, engenheiros e desenvolvedores, e colaborar para projetar para o futuro, colocando um foco muito maior sobre sustentabilidade.’’</p>
+      <div style="height: 130px;"></div>
+      <p class="deposition-name">Prof. Manfred Grohmann</p>
+      <p class="deposition-title">Structural engineer, Bollinger + Grohmann</p>
+    </div>
   </div>
-  <div id="depoimentos" style="background: url(<%= image_path('Ludkovsky-G') %>); background-position: top center;">
+  <div id="depoimentos" class="ludkovsky">
+    <div>
+      <p>‘’Desenvolvemos o Steligence® porque acredito que podemos ajudar arquitetos, engenheiros e desenvolvedores a construir edifícios de forma mais sustentável e econômica.’‘</p>
+      <div style="height: 110px;"></div>
+      <p class="deposition-name">Greg Ludkovsky</p>
+      <p class="deposition-title">Vice Presidente da ArcelorMittal.</p>
+    </div>
   </div>
 </div>
 <!-- FIM DEPOIMENTOS -->
@@ -342,7 +365,7 @@
   <% end %>
 </div>
 <!-- FIM CONTATO -->
-
+</div>
 
 <script>
   //TRIGGERS

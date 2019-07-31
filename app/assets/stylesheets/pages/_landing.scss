@@ -1,4 +1,19 @@
+.steligence-container{
+  margin-left: calc(50vw - 450px;);
+  width: 900px;
+}
+
+@media(max-width: 900px){
+  .steligence-container{
+    margin-left: 0;
+    width: auto;
+  }
+}
+
 // INICIO BANNER PRINCIPAL -->
+.banner-carousel{
+  height: 600px;
+}
 #main-banner {
   color: white;
   text-align: center;
@@ -12,6 +27,10 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+}
+
+.spacer{
+  height: 40px;
 }
 
 .slogan{
@@ -193,6 +212,10 @@
 // FIM BANNER PRINCIPAL -->
 
 // INICIO PILARES -->
+.cornerstone-carousel{
+  background: $steligence-bg;
+}
+
 #pilares {
  width: 100%;
  text-align: center;
@@ -229,11 +252,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .orange-stripes{
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
 // FIM PILARES -->
 
@@ -328,6 +353,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: $steligence-bg;
 }
 
 #catalogo{
@@ -344,9 +370,14 @@
 .catalog-description{
   display: flex;
   width: 100%;
+  padding: 0 12px;
   img{
     width: 20px;
     height: 23px;
+  }
+  p{
+    margin: 0;
+    flex: 0 0 auto;
   }
 }
 
@@ -410,7 +441,9 @@
   width: 100%;
   height: 310px;
   position: relative;
+  background-color: $steligence-bg;
   p{
+    margin: 0 4px;
     text-align: justify;
   }
   .slick-dots{
@@ -427,13 +460,39 @@
 }
 
 .catalog-dash{
-
+  margin-top: 4px;
+  flex: 1 0 auto;
+  padding: 4px;
+  padding-right: 0;
+}
+.orange-color{
+  color: $steligence-orange;
+}
+.fundacao-color{
+  color: $steligence-fundacao;
+}
+.piso-color{
+  color: $steligence-piso;
+}
+.estrutura-color{
+  color: $steligence-estrutura;
+}
+.laje-color{
+  color: $steligence-laje;
+}
+.vedacao-color{
+  color: $steligence-vedacao;
+}
+.envelope-color{
+  color: $steligence-envelope;
 }
 
 .catalog-dash-line{
   border-top-style: dashed;
-  height: 2px;
+  height: 1px;
+  margin-bottom: 1px;
   width: 100%;
+  border-width: thin;
 }
 
 .catalog-fundacao{
@@ -448,6 +507,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-fundacao;
+    }
+  }
 }
 
 .catalog-piso{
@@ -462,6 +528,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-piso;
+    }
+  }
 }
 
 .catalog-estrutura{
@@ -476,6 +549,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-estrutura;
+    }
+  }
 }
 
 
@@ -491,6 +571,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-laje;
+    }
+  }
 }
 
 .catalog-vedacao{
@@ -505,6 +592,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-vedacao;
+    }
+  }
 }
 
 .catalog-envelope{
@@ -519,6 +613,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-envelope;
+    }
+  }
 }
 
 #out-event{
@@ -584,14 +685,93 @@
 }
 
 .catalog-intro{
-
+  p{
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
 }
 
 // FIM CATALOGO -->
 
 // INICIO DEPOIMENTOS -->
 #depoimentos {
-  height: 600px;
+  height: 487px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.deposition-name{
+  color: $steligence-orange;
+  font-size: 20px;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.deposition-title{
+  color: $steligence-orange;
+  font-size: 14px;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 4px;
+  display: inline-block;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.wilmotte{
+  background-image: image-url('Wilmotte-JM.png');
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  color: white;
+  div{
+    padding: 16px;
+    height: 100%;
+    width: 55%;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.grohmann{
+  background-image: image-url('Grohmann-M.png');
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+  div{
+    padding: 16px;
+    height: 100%;
+    width: 55%;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.ludkovsky{
+  background-image: image-url('Ludkovsky-G.png');
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  div{
+    padding: 16px;
+    height: 100%;
+    width: 55%;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.depositions-text-box{
+  width: 100%;
+  height: 100%;
 }
 // FIM DEPOIMENTOS -->
 
