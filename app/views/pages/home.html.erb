@@ -332,7 +332,14 @@
 
 <!-- INICIO CONTATO -->
 <div id="contato">
-
+  <p>Tem que ser algo como deixe suas informações caso queira que algum executivo da ArcelorMittal entre em contato</p>
+  <%= simple_form_for @lead do |lead| %>
+    <%= lead.input :nome %>
+    <%= lead.input :empresa %>
+    <%= lead.input :email %>
+    <%= lead.input :telefone %>
+    <%= lead.submit "Enviar" %>
+  <% end %>
 </div>
 <!-- FIM CONTATO -->
 

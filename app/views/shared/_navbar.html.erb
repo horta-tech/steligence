@@ -7,9 +7,9 @@
 
 <div class="<%= 'logged-'if user_signed_in? %>nav-wrapper" id="nav-wrapper">
   <div class="navbar <%= 'logged-navbar' if user_signed_in? %>" id="navbar">
-    <%= link_to "STELIGENCE", root_path, class: "navbar-links" %>
     <div class="nav-items d-none d-lg-flex">
       <div class="nav-item-left">
+        <%= link_to "STELIGENCE", root_path, class: "navbar-links", style: "font-weight: bold;" %>
         <%= link_to "PILARES", root_path(anchor: 'pilares'), class: "navbar-links" %>
         <%= link_to "DIFERENCIAIS", root_path(anchor: 'diferenciais'), class: "navbar-links" %>
         <%= link_to "CATÁLOGO", root_path(anchor: 'catalogo'), class: "navbar-links" %>
@@ -27,7 +27,11 @@
 
     <!-- Mobile dropdown list -->
     <div class="nav-mobile d-lg-none">
+        <%= link_to root_path, class: "nav-item-logo" do %>
+          <%= image_tag 'arcelor-icon.png', class: "logo" %>
+        <% end %>
       <div class="dropdown">
+
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></a>
          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
           <!-- Login / Logout links -->
