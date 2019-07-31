@@ -1,0 +1,2 @@
+class AllowAccess < ApplicationRecord
+end
