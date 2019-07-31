@@ -463,6 +463,7 @@
   flex: 1 0 auto;
   padding: 4px;
   padding-right: 0;
+  opacity: 0.4;
 }
 .orange-color{
   color: $steligence-orange;
@@ -722,6 +723,7 @@
   display: inline-block;
   padding: 4px;
   background-color: rgba(255, 255, 255, 0.4);
+  margin-right: 85px;
 }
 .deposition-title{
   color: $steligence-orange;
@@ -813,3 +815,42 @@
   }
 }
 // FIM CONTATO -->
+
+
+@media(min-width: 576px){
+  .banner-carousel{
+    height: 500px;
+  }
+
+  #main-banner{
+    height: 500px;
+    display: flex !important;
+    .product-title{
+      .slogan{
+        margin-left: 228px;
+        font-size: 18px;
+      }
+      h1{
+        font-size: 4rem;
+        .registered{
+          left: 300px;
+        }
+      }
+    }
+    .description-text{
+      font-size: 16px;
+      padding: 0 32px;
+    }
+  }
+  .banner-column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .reverse-desktop{
+    flex-direction: row-reverse;
+  }
+
+}
