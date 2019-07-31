@@ -45,6 +45,14 @@
     font-size: 0.8em;
   }
 
+  i.fa-bars::before{
+    font-size: 2rem;
+  }
+
+  a.dropdown-toggle::after{
+    display: none;
+  }
+
   a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
