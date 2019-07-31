@@ -238,20 +238,360 @@
 // FIM PILARES -->
 
 // INICIO DIFERENCIAIS -->
-#diferenciais {
+.differential-wrapper{
+  padding: 7%;
+  padding-bottom: 0;
+  background-image: image-url('background-differentials');
+  background-position: 34% 80%;
+  background-repeat: no-repeat;
+  background-color: $steligence-light;
+}
 
+.differential-10{
+  margin-left: -8px;
+  height: 144px;
+  background-image: image-url('background-10');
+  background-size: contain;
+  background-repeat: no-repeat;
+  p{
+    line-height: 1.5rem;
+    font-size: 12px;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 100px;
+  }
+}
+
+.differential-main-title{
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-slogan{
+  margin: 0;
+  margin-left: 76px;
+  font-size: 8px;
+  width: 30px;
+  font-weight: bold;
+}
+
+.small-product-name{
+  font-size: 24px;
+  color: $steligence-orange;
+  position: relative;
+}
+
+.micro-registered{
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: -4px;
+}
+
+#diferenciais {
+  margin-top: 32px;
+  width: 100%;
+  height: 440px;
+  p{
+    width: 144px;
+  }
+}
+
+.differential-title{
+  color: $steligence-orange;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.differential-text{
+  font-size: 12px;
+}
+
+.differential-stripe{
+  margin-top: 8px;
+  width: 100%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: $steligence-orange;
+}
+
+.differential-image{
+  width: 144px;
+  height: 144px;
+  object-fit: cover;
 }
 // FIM DIFERENCIAIS -->
 
 // INICIO CATALOGO -->
-#catalogo {
+.catalog-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#catalogo{
+  margin-top: -24px;
+  width: 300px;
+  height: 400px;
+  background-position: 50% 50%;
+  background-image: image-url('building.png');
+  background-repeat: no-repeat;
+  position: relative;
+  min-width: 300px;
+}
+
+.catalog-description{
+  display: flex;
+  width: 100%;
+  img{
+    width: 20px;
+    height: 23px;
+  }
+}
+
+.catalog-click-layer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.fundacao{
+  position: absolute;
+  opacity: 0;
+  right: 64px;
+  bottom: 27px;
+  transition: 0.5s ease;
+}
+
+.piso{
+  position: absolute;
+  opacity: 0;
+  right: 73px;
+  bottom: 45px;
+  transition: 0.5s ease;
+}
+
+.estrutura{
+  position: absolute;
+  opacity: 0;
+  right: 76px;
+  bottom: 87px;
+  transition: 0.5s ease;
+}
+
+.laje{
+  position: absolute;
+  opacity: 0;
+  right: 109px;
+  bottom: 220px;
+  transition: 0.5s ease;
+}
+
+.vedacao{
+  position: absolute;
+  opacity: 0;
+  right: 89px;
+  bottom: 266px;
+  transition: 0.5s ease;
+}
+
+.envelope{
+  position: absolute;
+  opacity: 0;
+  right: 128px;
+  bottom: 151px;
+  transition: 0.5s ease;
+}
+
+.catalog-text-box{
+  width: 100%;
+  height: 310px;
+  position: relative;
+  p{
+    text-align: justify;
+  }
+  .slick-dots{
+    bottom: 0;
+  }
+}
+
+.catalog-intro{
+  padding: 8px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.catalog-dash{
 
 }
+
+.catalog-dash-line{
+  border-top-style: dashed;
+  height: 2px;
+  width: 100%;
+}
+
+.catalog-fundacao{
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.fundacao-carousel{
+  padding: 8px;
+  width: 100vw;
+  font-size: 12px;
+  height: 280px;
+}
+
+.catalog-piso{
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.piso-carousel{
+  padding: 8px;
+  width: 100vw;
+  font-size: 12px;
+  height: 280px;
+}
+
+.catalog-estrutura{
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.estrutura-carousel{
+  padding: 8px;
+  width: 100vw;
+  font-size: 12px;
+  height: 280px;
+}
+
+
+.catalog-laje{
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.laje-carousel{
+  padding: 8px;
+  width: 100vw;
+  font-size: 12px;
+  height: 280px;
+}
+
+.catalog-vedacao{
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.vedacao-carousel{
+  padding: 8px;
+  width: 100vw;
+  font-size: 12px;
+  height: 280px;
+}
+
+.catalog-envelope{
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.envelope-carousel{
+  padding: 8px;
+  width: 100vw;
+  font-size: 12px;
+  height: 280px;
+}
+
+#out-event{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+#fundacao-event{
+  position: absolute;
+  width: 36px;
+  height: 57px;
+  bottom: 22px;
+  right: 65px;
+}
+
+#piso-event{
+  position: absolute;
+  width: 145px;
+  height: 65px;
+  bottom: 49px;
+  left: 30px;
+}
+
+#estrutura-event{
+  position: absolute;
+  width: 22px;
+  height: 173px;
+  bottom: 84px;
+  right: 71px;
+}
+
+#laje-event{
+  position: absolute;
+  width: 105px;
+  height: 52px;
+  top: 125px;
+  left: 73px;
+
+}
+
+#vedacao-event{
+  position: absolute;
+  width: 37px;
+  height: 49px;
+  right: 87px;
+  top: 87px;
+}
+
+#envelope-event{
+  position: absolute;
+  width: 29px;
+  height: 56px;
+  bottom: 150px;
+  right: 126px;
+}
+
+.show-layer{
+  opacity: 0.8;
+  transition: 0.5s ease;
+  pointer-events: auto;
+}
+
+.catalog-intro{
+
+}
+
 // FIM CATALOGO -->
 
 // INICIO DEPOIMENTOS -->
 #depoimentos {
-
+  height: 600px;
 }
 // FIM DEPOIMENTOS -->
 
