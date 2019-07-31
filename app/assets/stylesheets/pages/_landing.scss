@@ -779,4 +779,26 @@
 #contato {
 
 }
+.contact-options-wrapper{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-options{
+  text-align: center;
+  width: 900px;
+  display: flex;
+  font-size: 16px;
+  color: $steligence-orange;
+  justify-content: space-around;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: $steligence-bg;
+  p{
+    padding: 16px;
+    margin: 0;
+  }
+}
 // FIM CONTATO -->
