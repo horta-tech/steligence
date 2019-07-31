@@ -344,9 +344,14 @@
 .catalog-description{
   display: flex;
   width: 100%;
+  padding: 0 12px;
   img{
     width: 20px;
     height: 23px;
+  }
+  p{
+    margin: 0;
+    flex: 0 0 auto;
   }
 }
 
@@ -411,6 +416,7 @@
   height: 310px;
   position: relative;
   p{
+    margin: 0 4px;
     text-align: justify;
   }
   .slick-dots{
@@ -427,13 +433,36 @@
 }
 
 .catalog-dash{
-
+  margin-top: 4px;
+  flex: 1 0 auto;
+  padding: 4px;
+  padding-right: 0;
+}
+.fundacao-color{
+  color: $steligence-fundacao;
+}
+.piso-color{
+  color: $steligence-piso;
+}
+.estrutura-color{
+  color: $steligence-estrutura;
+}
+.laje-color{
+  color: $steligence-laje;
+}
+.vedacao-color{
+  color: $steligence-vedacao;
+}
+.envelope-color{
+  color: $steligence-envelope;
 }
 
 .catalog-dash-line{
   border-top-style: dashed;
-  height: 2px;
+  height: 1px;
+  margin-bottom: 1px;
   width: 100%;
+  border-width: thin;
 }
 
 .catalog-fundacao{
@@ -448,6 +477,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-fundacao;
+    }
+  }
 }
 
 .catalog-piso{
@@ -462,6 +498,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-piso;
+    }
+  }
 }
 
 .catalog-estrutura{
@@ -476,6 +519,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-estrutura;
+    }
+  }
 }
 
 
@@ -491,6 +541,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-laje;
+    }
+  }
 }
 
 .catalog-vedacao{
@@ -505,6 +562,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-vedacao;
+    }
+  }
 }
 
 .catalog-envelope{
@@ -519,6 +583,13 @@
   width: 100vw;
   font-size: 12px;
   height: 280px;
+  div{
+    p:nth-of-type(1){
+      font-size: 14px;
+      font-weight: bold;
+      color: $steligence-envelope;
+    }
+  }
 }
 
 #out-event{

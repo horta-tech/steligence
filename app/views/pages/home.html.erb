@@ -199,13 +199,7 @@
     <div class="catalog-description">
       <%= image_tag('square-fundacao') %>
       <p>Fundações e Contenções</p>
-      <div class="catalog-dash">
-        <div class="catalog-dash-line"></div>
-        <div class="catalog-dash-line"></div>
-        <div class="catalog-dash-line"></div>
-        <div class="catalog-dash-line"></div>
-        <div class="catalog-dash-line"></div>
-      </div>
+      <%= render 'dash_line', locals:{ color: 'fundacao' } %>
     </div>
     <div class="fundacao-carousel">
       <div>
@@ -227,6 +221,7 @@
     <div class="catalog-description">
       <%= image_tag('square-piso') %>
       <p>Piso</p>
+      <%= render 'dash_line', locals:{ color: 'piso' } %>
     </div>
     <div class="piso-carousel">
       <div>
@@ -244,6 +239,7 @@
     <div class="catalog-description">
       <%= image_tag('square-estrutura') %>
       <p>Estrutura</p>
+      <%= render 'dash_line', locals:{ color: 'estrutura' } %>
     </div>
     <div class="estrutura-carousel">
       <div>
@@ -261,6 +257,7 @@
     <div class="catalog-description">
       <%= image_tag('square-laje') %>
       <p>Laje</p>
+      <%= render 'dash_line', locals:{ color: 'laje' } %>
     </div>
     <div class="laje-carousel">
       <div>
@@ -282,6 +279,7 @@
     <div class="catalog-description">
       <%= image_tag('square-vedacao') %>
       <p>Vedação</p>
+      <%= render 'dash_line', locals:{ color: 'envelope' } %>
     </div>
     <div class="vedacao-carousel">
       <div>
@@ -299,6 +297,7 @@
     <div class="catalog-description">
       <%= image_tag('square-envelope') %>
       <p>Envelope</p>
+      <%= render 'dash_line', locals:{ color: 'envelope' } %>
     </div>
     <div class="envelope-carousel">
       <div>
