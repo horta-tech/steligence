@@ -669,7 +669,82 @@
 
 // INICIO DEPOIMENTOS -->
 #depoimentos {
-  height: 600px;
+  height: 487px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.deposition-name{
+  color: $steligence-orange;
+  font-size: 20px;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.deposition-title{
+  color: $steligence-orange;
+  font-size: 14px;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 4px;
+  display: inline-block;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.wilmotte{
+  background-image: image-url('Wilmotte-JM.png');
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  color: white;
+  div{
+    padding: 16px;
+    height: 100%;
+    width: 55%;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.grohmann{
+  background-image: image-url('Grohmann-M.png');
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+  div{
+    padding: 16px;
+    height: 100%;
+    width: 55%;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.ludkovsky{
+  background-image: image-url('Ludkovsky-G.png');
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  div{
+    padding: 16px;
+    height: 100%;
+    width: 55%;
+    p{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.depositions-text-box{
+  width: 100%;
+  height: 100%;
 }
 // FIM DEPOIMENTOS -->
 
