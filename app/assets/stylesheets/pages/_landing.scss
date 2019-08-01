@@ -737,7 +737,7 @@
   font-weight: bold;
   display: inline-block;
   padding: 4px;
-  background-color: rgba(255, 255, 255, 0.4);
+
   margin-right: 85px;
 }
 .deposition-title{
@@ -748,7 +748,7 @@
   margin-bottom: 4px;
   display: inline-block;
   padding: 4px;
-  background-color: rgba(255, 255, 255, 0.4);
+
 }
 
 .wilmotte{
@@ -765,7 +765,7 @@
       font-weight: bold;
     }
     div{
-      height: 130px;
+      height: 64px;
     }
   }
 }
@@ -783,7 +783,7 @@
       font-weight: bold;
     }
     div{
-      height: 130px;
+      height: 72px;
     }
   }
 }
@@ -801,7 +801,7 @@
       font-weight: bold;
     }
     div{
-      height: 110px;
+      height: 60px;
     }
   }
 }
@@ -833,11 +833,11 @@
 }
 .contact-button{
   background-color: $steligence-orange;
-  padding: 16px;
+  padding: 10px;
   border-style: none;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 8px;
 }
 .contact-options-wrapper{
