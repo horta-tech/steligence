@@ -814,7 +814,31 @@
 
 // INICIO CONTATO -->
 #contato {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  padding: 16px;
+  background-color: white;
+  background-image: image-url('cadastro-bg.png');
+    text-align: center;
+  h1{
+    color: $steligence-gray;
+  }
+  p{
+    margin: 0;
+    font-size: 24px;
+    color: $steligence-orange;
+  }
+}
+.contact-button{
+  background-color: $steligence-orange;
+  padding: 16px;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px;
 }
 .contact-options-wrapper{
   background-color: white;
@@ -826,6 +850,7 @@
   text-align: center;
   width: 900px;
   display: flex;
+  flex-direction: column;
   font-size: 16px;
   color: $steligence-orange;
   justify-content: space-around;
@@ -1044,5 +1069,8 @@
        height: 0;
      }
    }
+  }
+  .contact-options{
+    flex-direction: row;
   }
 }

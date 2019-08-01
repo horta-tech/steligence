@@ -412,13 +412,15 @@
 
 <!-- INICIO CONTATO -->
 <div id="contato">
-  <p>Tem que ser algo como deixe suas informações caso queira que algum executivo da ArcelorMittal entre em contato</p>
+  <h1>CADASTRE-SE</h1>
+  <p> A evolução da contrução civil. Disponível para um futuro que já começou.</p>
+  <p>Saiba mais</p>
   <%= simple_form_for @lead do |lead| %>
-    <%= lead.input :nome %>
-    <%= lead.input :empresa %>
-    <%= lead.input :email %>
-    <%= lead.input :telefone %>
-    <%= lead.submit "Enviar" %>
+    <%= lead.input :nome, label: false, placeholder: "Nome" %>
+    <%= lead.input :empresa, label: false, placeholder: "Empresa" %>
+    <%= lead.input :email, label: false, placeholder: "Email" %>
+    <%= lead.input :telefone, label: false, placeholder: "Telefone" %>
+    <%= lead.submit "CADASTRAR", class: 'contact-button' %>
   <% end %>
 </div>
 <!-- FIM CONTATO -->
