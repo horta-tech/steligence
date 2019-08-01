@@ -22,7 +22,6 @@
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center center;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -86,6 +85,14 @@
   .large-drop{
     width: 72px;
   }
+}
+
+.mobile-hidden{
+  display: none;
+}
+
+.desktop-hidden{
+  display: none;
 }
 
 .line-recolor{
@@ -457,6 +464,7 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .catalog-dash{
@@ -464,6 +472,7 @@
   flex: 1 0 auto;
   padding: 4px;
   padding-right: 0;
+  opacity: 0.4;
 }
 .orange-color{
   color: $steligence-orange;
@@ -496,13 +505,16 @@
 }
 
 .catalog-fundacao{
+  max-width: 100%;
   position: absolute;
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .fundacao-carousel{
+  max-width: 100%;
   padding: 8px;
   width: 100vw;
   font-size: 12px;
@@ -517,13 +529,16 @@
 }
 
 .catalog-piso{
+  max-width: 100%;
   position: absolute;
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .piso-carousel{
+  max-width: 100%;
   padding: 8px;
   width: 100vw;
   font-size: 12px;
@@ -538,13 +553,16 @@
 }
 
 .catalog-estrutura{
+  max-width: 100%;
   position: absolute;
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .estrutura-carousel{
+  max-width: 100%;
   padding: 8px;
   width: 100vw;
   font-size: 12px;
@@ -560,13 +578,16 @@
 
 
 .catalog-laje{
+  max-width: 100%;
   position: absolute;
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background: $steligence-catalog;
 }
 
 .laje-carousel{
+  max-width: 100%;
   padding: 8px;
   width: 100vw;
   font-size: 12px;
@@ -581,13 +602,16 @@
 }
 
 .catalog-vedacao{
+  max-width: 100%;
   position: absolute;
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .vedacao-carousel{
+  max-width: 100%;
   padding: 8px;
   width: 100vw;
   font-size: 12px;
@@ -602,13 +626,16 @@
 }
 
 .catalog-envelope{
+  max-width: 100%;
   position: absolute;
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .envelope-carousel{
+  max-width: 100%;
   padding: 8px;
   width: 100vw;
   font-size: 12px;
@@ -711,6 +738,7 @@
   display: inline-block;
   padding: 4px;
   background-color: rgba(255, 255, 255, 0.4);
+  margin-right: 85px;
 }
 .deposition-title{
   color: $steligence-orange;
@@ -736,6 +764,9 @@
       font-size: 16px;
       font-weight: bold;
     }
+    div{
+      height: 130px;
+    }
   }
 }
 
@@ -750,6 +781,9 @@
     p{
       font-size: 16px;
       font-weight: bold;
+    }
+    div{
+      height: 130px;
     }
   }
 }
@@ -766,6 +800,9 @@
       font-size: 16px;
       font-weight: bold;
     }
+    div{
+      height: 110px;
+    }
   }
 }
 
@@ -777,6 +814,263 @@
 
 // INICIO CONTATO -->
 #contato {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  padding: 16px;
+  background-color: white;
+  background-image: image-url('cadastro-bg.png');
+    text-align: center;
+  h1{
+    color: $steligence-gray;
+  }
+  p{
+    margin: 0;
+    font-size: 24px;
+    color: $steligence-orange;
+  }
+}
+.contact-button{
+  background-color: $steligence-orange;
+  padding: 16px;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.contact-options-wrapper{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-options{
+  text-align: center;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: $steligence-orange;
+  justify-content: space-around;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: $steligence-bg;
+  p{
+    padding: 16px;
+    margin: 0;
+  }
 }
 // FIM CONTATO -->
+
+// LAYOUT DESKTOP
+@media(min-width: 576px){
+  .mobile-hidden{
+    display: block;
+  }
+
+  .desktop-column{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .desktop-row-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .desktop-column-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .spacer{
+      height: 0 !important;
+    }
+  }
+
+  // BANNER
+  .desktop-hidden{
+    display: none;
+  }
+
+  .banner-carousel{
+    height: 500px;
+  }
+
+  #main-banner{
+    height: 500px;
+    display: flex !important;
+    .product-title{
+      .slogan{
+        margin-left: 228px;
+        font-size: 18px;
+      }
+      h1{
+        font-size: 4rem;
+        .registered{
+          left: 300px;
+        }
+      }
+    }
+    .description-text{
+      font-size: 16px;
+      padding: 0 32px;
+    }
+    .spacer{
+      height: 200px;
+    }
+    .quote{
+      width: 80%;
+      margin-left: 100px;
+      text-align: left;
+    }
+
+    .space-title{
+      margin-left: 0;
+    }
+    .sub-header{
+      h5{
+        font-size: 24px;
+      }
+    }
+    .small-registered{
+      left: 204px;
+    }
+
+  }
+
+
+  .reverse-desktop{
+    flex-direction: row-reverse;
+  }
+
+  // PILARES
+  #pilares{
+    display: flex !important;
+    height: 540px;
+    .desktop-column{
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  // DIFERENCIAIS
+  .differential-wrapper{
+    .desktop-row-wrapper{
+      flex-direction: row;
+    }
+  }
+  .differential-10{
+    margin-top: 30%;
+    height: 200px;
+    p{
+      font-size: 20px;
+      margin-left: 150px;
+      margin-top: 44px;
+    }
+  }
+  .differential-main-title{
+    .small-product-title{
+      display: none;
+    }
+  }
+
+  // CATALOGO
+  .catalog-text-box{
+    width: 100%;
+    height: 100%;
+    p{
+      margin: 0 4px;
+      text-align: justify;
+    }
+    .slick-dots{
+      bottom: 0;
+    }
+  }
+  .desktop-catalog-text-box{
+    height: auto;
+    .catalog-text-box{
+      padding: 10%;
+    }
+  }
+  // DEPOIMENTOS
+  .wilmotte{
+    div{
+      padding: 70px;
+      p{
+        width: 390px;
+        font-size: 24px;
+      }
+      .deposition-name{
+        width: auto;
+        font-size: 16px;
+        background-color: transparent;
+      }
+      .deposition-title{
+        width: auto;
+        font-size: 14px;
+        background-color: transparent;
+      }
+      div{
+        padding: 0;
+        height: 0;
+      }
+    }
+  }
+
+  .grohmann{
+    div{
+     padding: 70px;
+     p{
+       width: 390px;
+       font-size: 24px;
+     }
+     .deposition-name{
+       width: auto;
+       font-size: 16px;
+       background-color: transparent;
+     }
+     .deposition-title{
+       width: auto;
+       font-size: 14px;
+       background-color: transparent;
+     }
+     div{
+       padding: 0;
+       height: 0;
+     }
+   }
+  }
+
+  .ludkovsky{
+    div{
+     padding: 70px;
+     p{
+       width: 390px;
+       font-size: 24px;
+     }
+     .deposition-name{
+       width: auto;
+       font-size: 16px;
+       background-color: transparent;
+     }
+     .deposition-title{
+       width: auto;
+       font-size: 14px;
+       background-color: transparent;
+     }
+     div{
+       padding: 0;
+       height: 0;
+     }
+   }
+  }
+  .contact-options{
+    flex-direction: row;
+  }
+}

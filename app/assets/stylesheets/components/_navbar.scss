@@ -30,7 +30,7 @@
 }
 
 .navbar {
-  height: 70px;
+  height: 100px;
   position: fixed;
   width: 100vw;
   padding: 0 40px;
@@ -45,17 +45,26 @@
     font-size: 0.8em;
   }
 
+  i.fa-bars::before{
+    font-size: 2rem;
+  }
+
+  a.dropdown-toggle::after{
+    display: none;
+  }
+
   a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
   .logo {
     height: 50px;
     margin: 0 60px;
+    filter: brightness(10);
   }
 }
 
 .nav-wrapper {
-  height: 70px;
+  height: 100px;
   width: 100vw;
 }
 
