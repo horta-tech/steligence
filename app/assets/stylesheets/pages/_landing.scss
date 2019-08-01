@@ -464,6 +464,7 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .catalog-dash{
@@ -509,6 +510,7 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .fundacao-carousel{
@@ -532,6 +534,7 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .piso-carousel{
@@ -555,6 +558,7 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .estrutura-carousel{
@@ -579,6 +583,7 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background: $steligence-catalog;
 }
 
 .laje-carousel{
@@ -602,6 +607,7 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .vedacao-carousel{
@@ -625,6 +631,7 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
+  background-color: $steligence-catalog;
 }
 
 .envelope-carousel{
@@ -757,6 +764,9 @@
       font-size: 16px;
       font-weight: bold;
     }
+    div{
+      height: 130px;
+    }
   }
 }
 
@@ -772,6 +782,9 @@
       font-size: 16px;
       font-weight: bold;
     }
+    div{
+      height: 130px;
+    }
   }
 }
 
@@ -786,6 +799,9 @@
     p{
       font-size: 16px;
       font-weight: bold;
+    }
+    div{
+      height: 110px;
     }
   }
 }
@@ -919,9 +935,6 @@
   }
 
   // DIFERENCIAIS
-  #diferenciais{
-
-  }
   .differential-wrapper{
     .desktop-row-wrapper{
       flex-direction: row;
@@ -940,5 +953,96 @@
     .small-product-title{
       display: none;
     }
+  }
+
+  // CATALOGO
+  .catalog-text-box{
+    width: 100%;
+    height: 100%;
+    p{
+      margin: 0 4px;
+      text-align: justify;
+    }
+    .slick-dots{
+      bottom: 0;
+    }
+  }
+  .desktop-catalog-text-box{
+    height: auto;
+    .catalog-text-box{
+      padding: 10%;
+    }
+  }
+  // DEPOIMENTOS
+  .wilmotte{
+    div{
+      padding: 70px;
+      p{
+        width: 390px;
+        font-size: 24px;
+      }
+      .deposition-name{
+        width: auto;
+        font-size: 16px;
+        background-color: transparent;
+      }
+      .deposition-title{
+        width: auto;
+        font-size: 14px;
+        background-color: transparent;
+      }
+      div{
+        padding: 0;
+        height: 0;
+      }
+    }
+  }
+
+  .grohmann{
+    div{
+     padding: 70px;
+     p{
+       width: 390px;
+       font-size: 24px;
+     }
+     .deposition-name{
+       width: auto;
+       font-size: 16px;
+       background-color: transparent;
+     }
+     .deposition-title{
+       width: auto;
+       font-size: 14px;
+       background-color: transparent;
+     }
+     div{
+       padding: 0;
+       height: 0;
+     }
+   }
+  }
+
+  .ludkovsky{
+    div{
+     padding: 70px;
+     p{
+       width: 390px;
+       font-size: 24px;
+     }
+     .deposition-name{
+       width: auto;
+       font-size: 16px;
+       background-color: transparent;
+     }
+     .deposition-title{
+       width: auto;
+       font-size: 14px;
+       background-color: transparent;
+     }
+     div{
+       padding: 0;
+       height: 0;
+     }
+   }
   }
 }
