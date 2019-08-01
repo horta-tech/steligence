@@ -25,12 +25,12 @@
 }
 
 .logged-nav-wrapper {
-  height: 110px;
+  height: 120px;
   width: 100vw;
 }
 
 .navbar {
-  height: 100px;
+  height: 80px;
   position: fixed;
   width: 100vw;
   padding: 0 40px;
@@ -64,7 +64,7 @@
 }
 
 .nav-wrapper {
-  height: 100px;
+  height: 80px;
   width: 100vw;
 }
 
@@ -113,11 +113,35 @@
 }
 
 .navbar-links {
-  font-size: 22px !important;
-  padding: 0 20px;
+  font-size: 18px !important;
+  padding: 0 16px;
   color: $white;
 }
 
 .dropdown-toggle {
   color: white;
+}
+
+
+@media (max-width: 1400px) {
+.nav-item-left {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.navbar-links {
+  padding: 0 10px;
+  margin: 0 0;
+}
+
+.navbar {
+  .logo {
+    height: 50px;
+    margin: 0 20px;
+    filter: brightness(10);
+  }
+}
 }

@@ -7,7 +7,7 @@
 
 <div class="<%= 'logged-'if user_signed_in? %>nav-wrapper" id="nav-wrapper">
   <div class="navbar <%= 'logged-navbar' if user_signed_in? %>" id="navbar">
-    <div class="nav-items d-none d-lg-flex">
+    <div class="nav-items d-none d-md-flex">
       <div class="nav-item-left">
         <%= link_to "STELIGENCE", root_path, class: "navbar-links", style: "font-weight: bold;" %>
         <%= link_to "PILARES", root_path(anchor: 'pilares'), class: "navbar-links" %>
@@ -26,7 +26,7 @@
 
 
     <!-- Mobile dropdown list -->
-    <div class="nav-mobile d-lg-none">
+    <div class="nav-mobile d-md-none">
         <div class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <i class="fa fa-bars"></i></a>
