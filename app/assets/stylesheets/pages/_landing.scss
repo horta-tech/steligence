@@ -1,5 +1,5 @@
 .steligence-container{
-  margin-left: calc(50vw - 450px;);
+  margin-left: calc(50% - 450px;);
   width: 900px;
 }
 
@@ -220,13 +220,12 @@
 
 // INICIO PILARES -->
 .cornerstone-carousel{
-  background: $steligence-bg;
 }
 
 #pilares {
  width: 100%;
  text-align: center;
- padding: 14%;
+ padding: 3%;
  img{
   width: 200px;
  }
@@ -244,7 +243,8 @@
   font-weight: bold;
 }
 .cornerstone-wrapper{
-  position: relative;
+  background-image: image-url('cornerstone-bg.png');
+  background-repeat: no-repeat;
 }
 .cornerstone-image-wrapper{
   width: 100%;
@@ -273,7 +273,7 @@
 .differential-wrapper{
   padding: 7%;
   padding-bottom: 0;
-  background-image: image-url('background-differentials');
+  background-image: image-url('differential-bg.png');
   background-position: 34% 80%;
   background-repeat: no-repeat;
   background-color: $steligence-light;
@@ -356,22 +356,21 @@
 // FIM DIFERENCIAIS -->
 
 // INICIO CATALOGO -->
+.catalog-row-wrapper{
+  background-image: image-url('building.png');
+}
+
 .catalog-wrapper{
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: $steligence-bg;
 }
 
 #catalogo{
-  margin-top: -24px;
-  width: 300px;
-  height: 400px;
+  height: 484px;
   background-position: 50% 50%;
-  background-image: image-url('building.png');
   background-repeat: no-repeat;
   position: relative;
-  min-width: 300px;
 }
 
 .catalog-description{
@@ -448,7 +447,6 @@
   width: 100%;
   height: 310px;
   position: relative;
-  background-color: $steligence-bg;
   p{
     margin: 0 4px;
     text-align: justify;
@@ -944,7 +942,6 @@
 
   }
 
-
   .reverse-desktop{
     flex-direction: row-reverse;
   }
@@ -952,7 +949,7 @@
   // PILARES
   #pilares{
     display: flex !important;
-    height: 540px;
+    height: 485px;
     .desktop-column{
       display: inline-block;
       text-align: left;
