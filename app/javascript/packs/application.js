@@ -47,7 +47,9 @@ $(".differential-carousel").slick({
     {
       breakpoint: 576,
       settings: {
-        arrows: false
+        arrows: true,
+        prevArrow: "<div class='left-arrow' style='left: -25px;'></div>",
+        nextArrow: "<div class='right-arrow' style='right: -15px;'></div>",
       }
     }
   ]

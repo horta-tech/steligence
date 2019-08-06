@@ -233,13 +233,13 @@
   display: inline-block;
   border-style: solid;
   border-radius: 8px;
-  padding: 2px;
+  padding: 6px;
   margin: 6px;
   border-color: $steligence-gray;
   border-width: thin;
   color: $steligence-orange;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
 }
 .cornerstone-wrapper{
   background-color: $steligence-catalog;
@@ -356,6 +356,10 @@
 .catalog-row-wrapper{
   background-image: image-url('building.png');
   background-position: 60% 50%;
+}
+
+.catalog-event-click {
+  cursor: pointer;
 }
 
 .catalog-wrapper{
@@ -899,7 +903,7 @@
 
   .desktop-row-wrapper{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: 100%;
   }
   .desktop-column-wrapper{
