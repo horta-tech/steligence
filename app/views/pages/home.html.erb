@@ -413,14 +413,16 @@
 
 <!-- INICIO CONTATO -->
 <div id="contato">
-  <div class="form-box">
+  <div class="text-wrapper">
     <p> A evolução da contrução civil. Disponível para um futuro que já começou.</p>
+  </div>
+  <div class="form-box">
     <p>Deixe suas informações para entrarmos em contato com você.</p>
     <%= simple_form_for @lead do |lead| %>
-      <%= lead.input :nome, label: false, placeholder: "Nome" %>
-      <%= lead.input :empresa, label: false, placeholder: "Empresa" %>
-      <%= lead.input :email, label: false, placeholder: "Email" %>
-      <%= lead.input :telefone, label: false, placeholder: "Telefone" %>
+      <%= lead.input :nome, label: false, placeholder: "Nome", input_html: { class: "steligence-input" } %>
+      <%= lead.input :empresa, label: false, placeholder: "Empresa", input_html: { class: "steligence-input" } %>
+      <%= lead.input :email, label: false, placeholder: "Email", input_html: { class: "steligence-input" } %>
+      <%= lead.input :telefone, label: false, placeholder: "Telefone", input_html: { class: "steligence-input" } %>
       <%= lead.submit "CADASTRAR", class: 'contact-button' %>
     <% end %>
   </div>
