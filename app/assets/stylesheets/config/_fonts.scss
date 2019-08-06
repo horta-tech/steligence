@@ -41,6 +41,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Vagrounded';
+  src: font-url('vagrounded-thin.otf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
 
-$body-font: "Open Sans", "Roboto", "Helvetica", "sans-serif";
-$headers-font: "Open Sans", "Roboto", "Helvetica", "sans-serif";
+@font-face {
+  font-family: 'Vagrounded';
+  src: font-url('vagrounded-black.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+$body-font: "Vagrounded", "Open Sans", "Roboto", "Helvetica", "sans-serif";
+$headers-font: "Vagrounded", "Open Sans", "Roboto", "Helvetica", "sans-serif";
