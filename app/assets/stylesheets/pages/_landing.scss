@@ -122,6 +122,13 @@
   border-width: thin;
   border-radius: 8px;
   width: 120px;
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color:white;
+    }
+  }
 }
 
 .button-position-quote{
@@ -136,6 +143,13 @@
   border-radius: 8px;
   width: 120px;
   color: $steligence-gray;
+    a {
+    text-decoration: none;
+    color: $steligence-gray;
+    &:hover {
+      color:$steligence-gray;
+    }
+  }
 }
 
 .sub-header{
@@ -861,6 +875,10 @@
   p{
     padding: 16px;
     margin: 0;
+  }
+  a{
+    text-decoration: none;
+    color: $steligence-orange;
   }
 }
 // FIM CONTATO -->
