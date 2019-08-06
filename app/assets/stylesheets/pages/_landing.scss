@@ -28,39 +28,26 @@
   padding: 0;
 }
 
+.banner1-logo{
+  width: 80%;
+  padding: 0 14%;
+  margin-top: 100px;
+}
+
+.banner-02-bg{
+  background: image_url('banner-03-alt.png');
+  background-position: 60% 0 !important;
+}
+
+.banner3-logo{
+  width: 80%;
+  padding: 0 14%;
+  margin-top: 100px;
+  margin-left: 20%;
+}
+
 .spacer{
   height: 40px;
-}
-
-.slogan{
-  margin-left: 124px;
-  margin-bottom: 0;
-  text-align: left;
-  width: 60px;
-  font-size: 12px;
-}
-
-.product-title{
-  padding: 0 14%;
-  margin-top: 8%;
-  width: 100%;
-  text-align: left;
-  h1{
-    position: relative;
-    font-weight: bold;
-  }
-}
-.registered{
-  position: absolute;
-  top: 4px;
-  left: 188px;
-  font-size: 12px;
-}
-.small-registered{
-  position: absolute;
-  top: 0;
-  left: 172px;
-  font-size: 12px;
 }
 
 .space-title{
@@ -245,15 +232,17 @@
 .cornerstone-wrapper{
   background-image: image-url('cornerstone-bg.png');
   background-repeat: no-repeat;
+  background-position: center center;
 }
 .cornerstone-image-wrapper{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 16% 0;
+  margin-top: 80px;
 }
 .cornerstone-text{
   font-weight: lighter;
+  margin-top: 80px;
 }
 .white-stripes{
   position: absolute;
@@ -358,6 +347,7 @@
 // INICIO CATALOGO -->
 .catalog-row-wrapper{
   background-image: image-url('building.png');
+  background-position: 60% 50%;
 }
 
 .catalog-wrapper{
@@ -368,6 +358,7 @@
 
 #catalogo{
   height: 484px;
+  width: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   position: relative;
@@ -390,63 +381,65 @@
 .catalog-click-layer{
   position: absolute;
   top: 0;
-  right: 0;
+  bottom: 0;
+  left: 50vw;
+  z-index: 100;
+}
+
+.lock-bg{
+  position: absolute;
+  background-position: center center;
   left: 0;
+  right: 0;
+  top: 0;
   bottom: 0;
 }
 
 .fundacao{
-  position: absolute;
+  background-image: image-url('fundacao-bg.png');
   opacity: 0;
-  right: 64px;
-  bottom: 27px;
   transition: 0.5s ease;
+  background-position: 60% 50%;
 }
 
 .piso{
-  position: absolute;
+  background-image: image-url('piso-bg.png');
   opacity: 0;
-  right: 73px;
-  bottom: 45px;
   transition: 0.5s ease;
+  background-position: 60% 50%;
 }
 
 .estrutura{
-  position: absolute;
+  background-image: image-url('estrutura-bg.png');
   opacity: 0;
-  right: 76px;
-  bottom: 87px;
   transition: 0.5s ease;
+  background-position: 60% 50%;
 }
 
 .laje{
-  position: absolute;
+  background-image: image-url('laje-bg.png');
   opacity: 0;
-  right: 109px;
-  bottom: 220px;
   transition: 0.5s ease;
+  background-position: 60% 50%;
 }
 
 .vedacao{
-  position: absolute;
+  background-image: image-url('vedacao-bg.png');
   opacity: 0;
-  right: 89px;
-  bottom: 266px;
   transition: 0.5s ease;
+  background-position: 60% 50%;
 }
 
 .envelope{
-  position: absolute;
+  background-image: image-url('envelope-bg.png');
   opacity: 0;
-  right: 128px;
-  bottom: 151px;
   transition: 0.5s ease;
+  background-position: 60% 50%;
 }
 
 .catalog-text-box{
   width: 100%;
   height: 310px;
-  position: relative;
   p{
     margin: 0 4px;
     text-align: justify;
@@ -462,7 +455,6 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
-  background-color: $steligence-catalog;
 }
 
 .catalog-dash{
@@ -508,13 +500,11 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
-  background-color: $steligence-catalog;
 }
 
 .fundacao-carousel{
   max-width: 100%;
   padding: 8px;
-  width: 100vw;
   font-size: 12px;
   height: 280px;
   div{
@@ -532,13 +522,11 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
-  background-color: $steligence-catalog;
 }
 
 .piso-carousel{
   max-width: 100%;
   padding: 8px;
-  width: 100vw;
   font-size: 12px;
   height: 280px;
   div{
@@ -556,13 +544,11 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
-  background-color: $steligence-catalog;
 }
 
 .estrutura-carousel{
   max-width: 100%;
   padding: 8px;
-  width: 100vw;
   font-size: 12px;
   height: 280px;
   div{
@@ -581,13 +567,11 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
-  background: $steligence-catalog;
 }
 
 .laje-carousel{
   max-width: 100%;
   padding: 8px;
-  width: 100vw;
   font-size: 12px;
   height: 280px;
   div{
@@ -605,13 +589,11 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
-  background-color: $steligence-catalog;
 }
 
 .vedacao-carousel{
   max-width: 100%;
   padding: 8px;
-  width: 100vw;
   font-size: 12px;
   height: 280px;
   div{
@@ -629,13 +611,11 @@
   opacity: 0;
   transition: 0.5s ease;
   pointer-events: none;
-  background-color: $steligence-catalog;
 }
 
 .envelope-carousel{
   max-width: 100%;
   padding: 8px;
-  width: 100vw;
   font-size: 12px;
   height: 280px;
   div{
@@ -656,55 +636,65 @@
 
 #fundacao-event{
   position: absolute;
-  width: 36px;
-  height: 57px;
-  bottom: 22px;
-  right: 65px;
+  width: 60px;
+  height: 70px;
+  top: 80%;
+  left: 211px;
+  background-color: blue;
 }
 
 #piso-event{
   position: absolute;
-  width: 145px;
-  height: 65px;
-  bottom: 49px;
-  left: 30px;
+  width: 164px;
+  height: 100px;
+  bottom: 10%;
+  left: -18px;
+  background-color: blue;
 }
 
 #estrutura-event{
   position: absolute;
   width: 22px;
-  height: 173px;
-  bottom: 84px;
-  right: 71px;
+  height: 230px;
+  top: 30%;
+  left: 232px;
+  background-color: blue;
 }
 
 #laje-event{
   position: absolute;
-  width: 105px;
-  height: 52px;
-  top: 125px;
-  left: 73px;
+  width: 120px;
+  height: 60px;
+  top: 27%;
+  left: 55px;
+  background-color: blue;
 
 }
 
 #vedacao-event{
   position: absolute;
-  width: 37px;
-  height: 49px;
-  right: 87px;
-  top: 87px;
+  width: 45px;
+  height: 50px;
+  top: 16%;
+  left: 192px;
+  background-color: blue;
 }
 
 #envelope-event{
   position: absolute;
-  width: 29px;
-  height: 56px;
-  bottom: 150px;
-  right: 126px;
+  width: 40px;
+  height: 70px;
+  top: 45%;
+  left: 150px;
+  background-color: blue;
+}
+
+.set-fundacao{
+  background-image: image-url('fundacao-bg.png');
 }
 
 .show-layer{
-  opacity: 0.8;
+  opacity: 1;
   transition: 0.5s ease;
   pointer-events: auto;
 }
@@ -731,28 +721,28 @@
   font-size: 20px;
   white-space: nowrap;
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   font-weight: bold;
   display: inline-block;
-  padding: 4px;
+  padding: 0;
 
-  margin-right: 85px;
+  margin-right: 100%;
 }
 .deposition-title{
   color: $steligence-orange;
-  font-size: 14px;
+  font-size: 12px !important;
   white-space: nowrap;
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   display: inline-block;
-  padding: 4px;
+  padding: 0;
 
 }
 
 .wilmotte{
   background-image: image-url('Wilmotte-JM.png');
   background-repeat: no-repeat;
-  background-position: 60% 50%;
+  background-position: 55% 50%;
   color: white;
   div{
     padding: 16px;
@@ -771,7 +761,7 @@
 .grohmann{
   background-image: image-url('Grohmann-M.png');
   background-repeat: no-repeat;
-  background-position: 70% 50%;
+  background-position: 60% 50%;
   div{
     padding: 16px;
     height: 100%;
@@ -781,7 +771,7 @@
       font-weight: bold;
     }
     div{
-      height: 72px;
+      height:120px;
     }
   }
 }
@@ -789,7 +779,7 @@
 .ludkovsky{
   background-image: image-url('Ludkovsky-G.png');
   background-repeat: no-repeat;
-  background-position: 65% 50%;
+  background-position: 55% 50%;
   div{
     padding: 16px;
     height: 100%;
@@ -903,24 +893,12 @@
   #main-banner{
     height: 500px;
     display: flex !important;
-    .product-title{
-      .slogan{
-        margin-left: 228px;
-        font-size: 18px;
-      }
-      h1{
-        font-size: 4rem;
-        .registered{
-          left: 300px;
-        }
-      }
-    }
     .description-text{
       font-size: 16px;
       padding: 0 32px;
     }
     .spacer{
-      height: 200px;
+      height: 360px;
     }
     .quote{
       width: 80%;
@@ -932,14 +910,42 @@
       margin-left: 0;
     }
     .sub-header{
+      margin-top: 26%;
+      margin-left: 20%;
       h5{
-        font-size: 24px;
+        font-size: 32px;
       }
     }
     .small-registered{
       left: 204px;
     }
 
+  }
+
+  .banner3-logo{
+    width: 60%;
+    object-fit: scale-down;
+    padding: 0 14%;
+    margin-top: 200px;
+    margin-left: 10%;
+  }
+
+  .banner1-logo{
+    width: 70%;
+    object-fit: scale-down;
+  }
+
+  .banner-02-bg{
+    background: image_url('banner-03.png');
+    background-position: 40% 50%;
+  }
+
+  .space-line{
+    margin: 0;
+    margin-bottom: 10%;
+    div{
+      border-width: 5px;
+    }
   }
 
   .reverse-desktop{
@@ -979,7 +985,7 @@
 
   // CATALOGO
   .catalog-text-box{
-    width: 100%;
+    width: 450px;
     height: 100%;
     p{
       margin: 0 4px;
@@ -991,10 +997,40 @@
   }
   .desktop-catalog-text-box{
     height: auto;
+    width: 450px;
     .catalog-text-box{
       padding: 10%;
     }
   }
+
+  .catalog-row-wrapper{
+    background-image: image-url('building.png');
+    background-position: 50% 50%;
+  }
+
+  .catalog-click-layer{
+    left: 50%;
+  }
+
+  .fundacao{
+    background-position: 50% 50%;
+  }
+  .piso{
+    background-position: 50% 50%;
+  }
+  .estrutura{
+    background-position: 50% 50%;
+  }
+  .laje{
+    background-position: 50% 50%;
+  }
+  .vedacao{
+    background-position: 50% 50%;
+  }
+  .envelope{
+    background-position: 50% 50%;
+  }
+
   // DEPOIMENTOS
   .wilmotte{
     div{

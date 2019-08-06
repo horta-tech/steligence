@@ -5,10 +5,7 @@
   <div id="main-banner" style="background: url(<%= image_path('banner-01.png') %>); background-position: 30% 50%;">
 
     <div class="desktop-column">
-      <div class="product-title">
-        <p class="slogan">The Intelligent construction choice</p>
-        <h1>Steligence <div class="registered">®</div></h1>
-      </div>
+      <%= image_tag('logo-steligence-white.png', class: 'banner1-logo') %>
       <div class="space-line">
         <div></div>
         <div class="large-drop"></div>
@@ -31,7 +28,7 @@
     </div>
 
   </div>
-  <div id="main-banner" class="reverse-desktop" style="background: url(<%= image_path('banner-03.png') %>); background-position: 45% 50%;">
+  <div id="main-banner" class="reverse-desktop banner-02-bg">
     <div class="desktop-column">
 
       <div class="quote">
@@ -67,17 +64,14 @@
 
       <div class="desktop-row-wrapper">
         <div class="desktop-column">
-          <div class="product-title space-title">
-            <p class="slogan">The Intelligent construction choice</p>
-            <h1>Steligence <div class="registered">®</div></h1>
-          </div>
+          <%= image_tag('logo-steligence-white.png', class: 'banner3-logo') %>
         </div>
         <div class="desktop-column">
           <div class="sub-header">
             <h5>Escolha</h5>
             <h5>a construção inteligente.</h5>
             <h5>Esolha Aço.</h5>
-            <h5>Escolha Steligence<div class="registered small-registered">®</div>.</h5>
+            <h5>Escolha Steligence®.</h5>
           </div>
         </div>
       </div>
@@ -228,164 +222,158 @@
 
 
 <div class="desktop-row-wrapper catalog-row-wrapper">
+  <div id="catalogo">
+      <div class="fundacao lock-bg"></div>
+      <div class="piso lock-bg"></div>
+      <div class="estrutura lock-bg"></div>
+      <div class="laje lock-bg"></div>
+      <div class="vedacao lock-bg"></div>
+      <div class="envelope lock-bg"></div>
+<!--z -->
 
-  <div class="desktop-column">
-    <div class="catalog-wrapper">
-      <div id="catalogo">
-          <%= image_tag('fundacao.png', class: 'fundacao') %>
-          <%= image_tag('piso.png', class: 'piso') %>
-          <%= image_tag('estrutura.png', class: 'estrutura') %>
-          <%= image_tag('laje.png', class: 'laje') %>
-          <%= image_tag('vedacao.png', class: 'vedacao') %>
-          <%= image_tag('envelope.png', class: 'envelope') %>
-
-          <div class="catalog-click-layer">
-            <div id='out-event'></div>
-            <div id='fundacao-event'></div>
-            <div id='piso-event'></div>
-            <div id='estrutura-event'></div>
-            <div id='laje-event'></div>
-            <div id='vedacao-event'></div>
-            <div id='envelope-event'></div>
-          </div>
+      <div class="catalog-click-layer">
+        <div id='out-event'></div>
+        <div id='fundacao-event'></div>
+        <div id='piso-event'></div>
+        <div id='estrutura-event'></div>
+        <div id='laje-event'></div>
+        <div id='vedacao-event'></div>
+        <div id='envelope-event'></div>
       </div>
-    </div>
+
+
+
   </div>
-  <div class="desktop-column desktop-catalog-text-box">
-    <div class="catalog-text-box">
-      <div class="catalog-intro show-layer catalog-set-height">
-        <div class="small-product-title" style="margin-left: 45%;">
-          <p class="small-slogan orange-color" style="margin-left: 128px; font-size: 10px;">The Intelligent construction choice</p>
-          <h1 class="small-product-name" style="font-size: 40px; position: relative;">Steligence
-            <div style="position: absolute; font-size: 12px; right: 20px; top: 0;">®</div>
-          </h1>
-        </div>
-        <p>O Steligence® é a oportunidade de otimizar todos os aspectos de um projeto, comparando os principais métodos construtivos do mercado com as soluções Best-in-Class da ArcelorMittal, considerando todas as etapas construtivas.</p>
-      </div>
-
-      <div class="catalog-fundacao catalog-set-height">
-        <div class="catalog-description">
-          <%= image_tag('square-fundacao.png') %>
-          <p>Fundações e Contenções</p>
-          <%= render 'dash_line', locals:{ color: 'fundacao' } %>
-        </div>
-        <div class="fundacao-carousel">
-          <div>
-            <p>Elementos Armados com Fôrmas Incorporadas</p>
-            <p>O uso e aplicação de elementos armados com fôrmas incorporadas permite a eliminação de mão de obra de carpintaria e armação na etapa de fundação aliados a uma menor necessidade de movimentação de terra (escavação e reaterra). Além disso, possibilita acelerar o cronograma de obra, garantindo a qualidade e precisão de montagem.</p>
-          </div>
-          <div>
-            <p>Estaca-prancha</p>
-            <p>A ArcelorMittal é a maior produtora de estacas pranchas laminadas a quente, oferecendo ampla variedade de perfis a fim de atender as necessidades especificas de cada projeto. Aliando um custo competitivo à rapidez de execução, a parede de estacas-prancha metálicas têm se mostrado a solução mais econômica para diversas obras. Com uma grande gama de alternativas, é possível adequar a solução aos mais variados tipos de construção, desde terminais portuários a passagens de nível rodoviárias, subsolos, entre outros.</p>
-          </div>
-          <div>
-            <p>Tubos metálicos</p>
-            <p>Devido à sua geometria e a alta resistência do aço, os tubos estruturais e de grandes dimensões possuem elevada capacidade para suportar esforços. Os tubos são produzidos com utilização de solda helicoidal para aplicações como estacas, fundações de cais de portos, offshore, pilares e estruturas tubulares.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog-piso catalog-set-height">
-        <div class="catalog-description">
-          <%= image_tag('square-piso.png') %>
-          <p>Piso</p>
-          <%= render 'dash_line', locals:{ color: 'piso' } %>
-        </div>
-        <div class="piso-carousel">
-          <div>
-            <p>Tela Soldada</p>
-            <p>A aplicação em lajes e pisos possibilita aumento de produtividade na montagem das etapas estruturais e consequente redução de custos. Seu uso ainda garante maior qualidade de execução,por se tratar de processo industrializado de fabricação. Além disso, a ArcelorMittal propõe otimizações na aplicação através da produção de abrangente número de telas especiais, que podem ser fabricadas sob medida, reduzindo perdas da ordem de 20%.</p>
-          </div>
-          <div>
-            <p>Dramix®</p>
-            <p>O uso de fibras de aço Dramix® garante um controle de fissuração elevado, além de proporcionar maior estabilidade e integridade às juntas de dilatação do concreto. Além disso,permite um aumento de produtividade pela redução de mão de obra e elimina cortes e perdas de aço no processo de fabricação.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog-estrutura catalog-set-height">
-        <div class="catalog-description">
-          <%= image_tag('square-estrutura.png') %>
-          <p>Estrutura</p>
-          <%= render 'dash_line', locals:{ color: 'estrutura' } %>
-        </div>
-        <div class="estrutura-carousel">
-          <div>
-            <p>Armadura Pronta Soldada</p>
-            <p>A aplicação de elementos armados para pilares, vigas, armadura de punção e outros, em estruturas de concreto, proporciona ganhos representativos em qualidade e produtividade no canteiro. O processo industrializado de fabricação garante maior rigidez aos elementos, por se tratar de ligação com solda entre as barras, e, consequentemente, maior facilidade no posicionamento da fôrma.</p>
-          </div>
-          <div>
-            <p>Estruturas Metálicas Mistas</p>
-            <p>A ArcelorMittal produz aços planos laminados a quente para a aplicação em perfis soldados e tubulares para estruturas de edificações e de pontes. Os perfis podem ser produzidos a partir de aços de qualidade estrutural, como CST Civil 300, CST Civil 350 e CST Civil 500, ou ainda, para maior resistência à corrosão atmosférica, serem fabricados com aços CST COR 400 e CST COR 500. Para perfis estruturais de espessuras de até 2 mm, há a opção de materiais revestidos com propriedades mecânicas garantidas (ZAR) e diversas opções de revestimento metálico para a proteção à corrosão.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog-laje catalog-set-height">
-        <div class="catalog-description">
-          <%= image_tag('square-laje.png') %>
-          <p>Laje</p>
-          <%= render 'dash_line', locals:{ color: 'laje' } %>
-        </div>
-        <div class="laje-carousel">
-          <div>
-            <p>Treilfácil®</p>
-            <p>Desenvolvida para atender às exigências do mercado por produtos que racionalizem os processos construtivos e diminuam seus custos. É composta por treliça de aço, espaçadores plásticos e fôrma de aço zincado - que confere maior resistência à corrosão. A Trelifácil® possui um peso cerca de 80% menor quando comparado ao de uma vigota comum, o que oferece leveza, praticidade, qualidade e simplicidade na aplicação.</p>
-          </div>
-          <div>
-            <p>Steel deck - Polydeck 59S</p>
-            <p>A laje steel deck atua como fôrma na execução da laje e como armadura positiva depois da cura do concreto. O perfil Polydeck 59S reduz ou até mesmo elimina totalmente as escoras no momento da concretagem, gera menos resíduos e traz mais velocidade à obra, diminuindo a mãe de obra no canteiro e o transporte de insumos. O Polydeck 59S pode ser especificado para obras de estruturas metálicas ou de concreto.</p>
-          </div>
-          <div>
-            <p>Cordalha de protensão</p>
-            <p>A aplicação da protensão proporciona redução do número de pilares, maiores vãos, peças estruturais mais esbeltas e maior durabilidade da estrutura. Uma vez que as instalações hidráulica elétrica e de ar-condicionado podem ser posicionadas rente ao fundo da laje, não tendo de passar por baixo de vigas, inexistentes na solução, a distância entre os pisos fica menor, com uma economia de aproximadamente 50 cm de altura em cada andar.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog-vedacao catalog-set-height">
-        <div class="catalog-description">
-          <%= image_tag('square-vedacao.png') %>
-          <p>Vedação</p>
-          <%= render 'dash_line', locals:{ color: 'envelope' } %>
-        </div>
-        <div class="vedacao-carousel">
-          <div>
-            <p>Murfor®</p>
-            <p>Reforço de aço para alvenaria produzido pela Belgo Bekaert Arames, que proporciona um melhor desempenho estrutural, previne trincas, aumenta a resistência e oferece novas possibilidades arquitetônicas. Sua aplicação reduz a necessidade de manutenção do edifício e oferece melhor durabilidade construtiva.</p>
-          </div>
-          <div>
-            <p>Drywall e Light Steel Framing</p>
-            <p>Os sistemas em perfis leves galvanizados propiciam facilidade de montagem e rapidez de execução, com a consequente redução de prazos e de custos. Conformados a frio, a partir de chapas galvanizadas por sequência de rolos, oferecem resistência à corrosão e proporcionam excelente custo/benefício. São utilizados nas vedações internas  e externas de edifícios em conjunto com chapas delgadas e isolantes térmicos trazendo ganhos em conforto térmico e em velocidade de obra.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog-envelope catalog-set-height">
-        <div class="catalog-description">
-          <%= image_tag('square-envelope.png') %>
-          <p>Envelope</p>
-          <%= render 'dash_line', locals:{ color: 'envelope' } %>
-        </div>
-        <div class="envelope-carousel">
-          <div>
-            <p>Global Roof e Global Wall</p>
-            <p>As coberturas e fachadas GlobalRoof e GlobalWall Perfilor compreendem sistemas sanduíche formados por perfis metálicos, mantas isolantes, chapas perfuradas e membranas, projetados para oferecer elevado isolamento térmico, acústico e, dependendo da opção, absorção acústica. Os sistemas GlobalRoof são únicos quando o assunto é acústica em coberturas metálicas. Disponíveis em diversas espessuras de chapas e de acabamentos, como PVDF resistente a UV, brancos com alto SRI e em poliuretano de alta camada (Max 60).</p>
-          </div>
-          <div>
-            <p>Painéis termoacústicos Termilor</p>
-            <p>Os painéis Termilor nas suas versões Termilor Roof para coberturas e Termilor Wall para fachadas utilizam poliisocianurato (PIR) injetado como isolante térmico, em espessuras de 30, 40 ou 50 mm. São voltados para edificações nas quais o conforto térmico é uma exigência de projeto. Sua capacidade isolante e sua estética os tornaram peças frequentes nas coberturas e fachadas de edificações onde conforto térmico e arquitetura tenham que ser resolvidos por um único produto.</p>
-          </div>
-          <div>
-            <p>Magnelis®</p>
-            <p>Revestimento metálico inovador, que possui camada de proteção estável e duradoura oferecendo maior proteção em bordas cortadas e perfurações. Seu uso resulta em uma proteção altamente eficaz contra corrosão, sendo opção para aplicações externas e internas como coberturas, terças de telhado, revestimentos de fachadas, fôrma colaborante steel deck, perfis leves, chapas expandidas ou perfuradas, entre outros. Magnelis® é recomendado para o uso em ambiente agrícola como em galpões para cultura de animais, onde há ambientes ricos em amônia. Graças à sua exclusiva composição de zinco, 3,5% de alumínio e 3% de magnésio, Magnelis® responde a demanda de maior durabilidade e redução dos custos de manutenção.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>
+<div class="desktop-column desktop-catalog-text-box">
+  <div class="catalog-text-box">
+    <div class="catalog-intro show-layer catalog-set-height">
+      <%= image_tag('logo-steligence-cor.png', style:'width: 300px;') %>
+      <p>O Steligence® é a oportunidade de otimizar todos os aspectos de um projeto, comparando os principais métodos construtivos do mercado com as soluções Best-in-Class da ArcelorMittal, considerando todas as etapas construtivas.</p>
+    </div>
+
+    <div class="catalog-fundacao catalog-set-height">
+      <div class="catalog-description">
+        <%= image_tag('square-fundacao.png') %>
+        <p>Fundações e Contenções</p>
+        <%= render 'dash_line', locals:{ color: 'fundacao' } %>
+      </div>
+      <div class="fundacao-carousel">
+        <div>
+          <p>Elementos Armados com Fôrmas Incorporadas</p>
+          <p>O uso e aplicação de elementos armados com fôrmas incorporadas permite a eliminação de mão de obra de carpintaria e armação na etapa de fundação aliados a uma menor necessidade de movimentação de terra (escavação e reaterra). Além disso, possibilita acelerar o cronograma de obra, garantindo a qualidade e precisão de montagem.</p>
+        </div>
+        <div>
+          <p>Estaca-prancha</p>
+          <p>A ArcelorMittal é a maior produtora de estacas pranchas laminadas a quente, oferecendo ampla variedade de perfis a fim de atender as necessidades especificas de cada projeto. Aliando um custo competitivo à rapidez de execução, a parede de estacas-prancha metálicas têm se mostrado a solução mais econômica para diversas obras. Com uma grande gama de alternativas, é possível adequar a solução aos mais variados tipos de construção, desde terminais portuários a passagens de nível rodoviárias, subsolos, entre outros.</p>
+        </div>
+        <div>
+          <p>Tubos metálicos</p>
+          <p>Devido à sua geometria e a alta resistência do aço, os tubos estruturais e de grandes dimensões possuem elevada capacidade para suportar esforços. Os tubos são produzidos com utilização de solda helicoidal para aplicações como estacas, fundações de cais de portos, offshore, pilares e estruturas tubulares.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-piso catalog-set-height">
+      <div class="catalog-description">
+        <%= image_tag('square-piso.png') %>
+        <p>Piso</p>
+        <%= render 'dash_line', locals:{ color: 'piso' } %>
+      </div>
+      <div class="piso-carousel">
+        <div>
+          <p>Tela Soldada</p>
+          <p>A aplicação em lajes e pisos possibilita aumento de produtividade na montagem das etapas estruturais e consequente redução de custos. Seu uso ainda garante maior qualidade de execução,por se tratar de processo industrializado de fabricação. Além disso, a ArcelorMittal propõe otimizações na aplicação através da produção de abrangente número de telas especiais, que podem ser fabricadas sob medida, reduzindo perdas da ordem de 20%.</p>
+        </div>
+        <div>
+          <p>Dramix®</p>
+          <p>O uso de fibras de aço Dramix® garante um controle de fissuração elevado, além de proporcionar maior estabilidade e integridade às juntas de dilatação do concreto. Além disso,permite um aumento de produtividade pela redução de mão de obra e elimina cortes e perdas de aço no processo de fabricação.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-estrutura catalog-set-height">
+      <div class="catalog-description">
+        <%= image_tag('square-estrutura.png') %>
+        <p>Estrutura</p>
+        <%= render 'dash_line', locals:{ color: 'estrutura' } %>
+      </div>
+      <div class="estrutura-carousel">
+        <div>
+          <p>Armadura Pronta Soldada</p>
+          <p>A aplicação de elementos armados para pilares, vigas, armadura de punção e outros, em estruturas de concreto, proporciona ganhos representativos em qualidade e produtividade no canteiro. O processo industrializado de fabricação garante maior rigidez aos elementos, por se tratar de ligação com solda entre as barras, e, consequentemente, maior facilidade no posicionamento da fôrma.</p>
+        </div>
+        <div>
+          <p>Estruturas Metálicas Mistas</p>
+          <p>A ArcelorMittal produz aços planos laminados a quente para a aplicação em perfis soldados e tubulares para estruturas de edificações e de pontes. Os perfis podem ser produzidos a partir de aços de qualidade estrutural, como CST Civil 300, CST Civil 350 e CST Civil 500, ou ainda, para maior resistência à corrosão atmosférica, serem fabricados com aços CST COR 400 e CST COR 500. Para perfis estruturais de espessuras de até 2 mm, há a opção de materiais revestidos com propriedades mecânicas garantidas (ZAR) e diversas opções de revestimento metálico para a proteção à corrosão.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-laje catalog-set-height">
+      <div class="catalog-description">
+        <%= image_tag('square-laje.png') %>
+        <p>Laje</p>
+        <%= render 'dash_line', locals:{ color: 'laje' } %>
+      </div>
+      <div class="laje-carousel">
+        <div>
+          <p>Treilfácil®</p>
+          <p>Desenvolvida para atender às exigências do mercado por produtos que racionalizem os processos construtivos e diminuam seus custos. É composta por treliça de aço, espaçadores plásticos e fôrma de aço zincado - que confere maior resistência à corrosão. A Trelifácil® possui um peso cerca de 80% menor quando comparado ao de uma vigota comum, o que oferece leveza, praticidade, qualidade e simplicidade na aplicação.</p>
+        </div>
+        <div>
+          <p>Steel deck - Polydeck 59S</p>
+          <p>A laje steel deck atua como fôrma na execução da laje e como armadura positiva depois da cura do concreto. O perfil Polydeck 59S reduz ou até mesmo elimina totalmente as escoras no momento da concretagem, gera menos resíduos e traz mais velocidade à obra, diminuindo a mãe de obra no canteiro e o transporte de insumos. O Polydeck 59S pode ser especificado para obras de estruturas metálicas ou de concreto.</p>
+        </div>
+        <div>
+          <p>Cordalha de protensão</p>
+          <p>A aplicação da protensão proporciona redução do número de pilares, maiores vãos, peças estruturais mais esbeltas e maior durabilidade da estrutura. Uma vez que as instalações hidráulica elétrica e de ar-condicionado podem ser posicionadas rente ao fundo da laje, não tendo de passar por baixo de vigas, inexistentes na solução, a distância entre os pisos fica menor, com uma economia de aproximadamente 50 cm de altura em cada andar.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-vedacao catalog-set-height">
+      <div class="catalog-description">
+        <%= image_tag('square-vedacao.png') %>
+        <p>Vedação</p>
+        <%= render 'dash_line', locals:{ color: 'envelope' } %>
+      </div>
+      <div class="vedacao-carousel">
+        <div>
+          <p>Murfor®</p>
+          <p>Reforço de aço para alvenaria produzido pela Belgo Bekaert Arames, que proporciona um melhor desempenho estrutural, previne trincas, aumenta a resistência e oferece novas possibilidades arquitetônicas. Sua aplicação reduz a necessidade de manutenção do edifício e oferece melhor durabilidade construtiva.</p>
+        </div>
+        <div>
+          <p>Drywall e Light Steel Framing</p>
+          <p>Os sistemas em perfis leves galvanizados propiciam facilidade de montagem e rapidez de execução, com a consequente redução de prazos e de custos. Conformados a frio, a partir de chapas galvanizadas por sequência de rolos, oferecem resistência à corrosão e proporcionam excelente custo/benefício. São utilizados nas vedações internas  e externas de edifícios em conjunto com chapas delgadas e isolantes térmicos trazendo ganhos em conforto térmico e em velocidade de obra.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-envelope catalog-set-height">
+      <div class="catalog-description">
+        <%= image_tag('square-envelope.png') %>
+        <p>Envelope</p>
+        <%= render 'dash_line', locals:{ color: 'envelope' } %>
+      </div>
+      <div class="envelope-carousel">
+        <div>
+          <p>Global Roof e Global Wall</p>
+          <p>As coberturas e fachadas GlobalRoof e GlobalWall Perfilor compreendem sistemas sanduíche formados por perfis metálicos, mantas isolantes, chapas perfuradas e membranas, projetados para oferecer elevado isolamento térmico, acústico e, dependendo da opção, absorção acústica. Os sistemas GlobalRoof são únicos quando o assunto é acústica em coberturas metálicas. Disponíveis em diversas espessuras de chapas e de acabamentos, como PVDF resistente a UV, brancos com alto SRI e em poliuretano de alta camada (Max 60).</p>
+        </div>
+        <div>
+          <p>Painéis termoacústicos Termilor</p>
+          <p>Os painéis Termilor nas suas versões Termilor Roof para coberturas e Termilor Wall para fachadas utilizam poliisocianurato (PIR) injetado como isolante térmico, em espessuras de 30, 40 ou 50 mm. São voltados para edificações nas quais o conforto térmico é uma exigência de projeto. Sua capacidade isolante e sua estética os tornaram peças frequentes nas coberturas e fachadas de edificações onde conforto térmico e arquitetura tenham que ser resolvidos por um único produto.</p>
+        </div>
+        <div>
+          <p>Magnelis®</p>
+          <p>Revestimento metálico inovador, que possui camada de proteção estável e duradoura oferecendo maior proteção em bordas cortadas e perfurações. Seu uso resulta em uma proteção altamente eficaz contra corrosão, sendo opção para aplicações externas e internas como coberturas, terças de telhado, revestimentos de fachadas, fôrma colaborante steel deck, perfis leves, chapas expandidas ou perfuradas, entre outros. Magnelis® é recomendado para o uso em ambiente agrícola como em galpões para cultura de animais, onde há ambientes ricos em amônia. Graças à sua exclusiva composição de zinco, 3,5% de alumínio e 3% de magnésio, Magnelis® responde a demanda de maior durabilidade e redução dos custos de manutenção.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <!-- FIM CATALOGO -->
