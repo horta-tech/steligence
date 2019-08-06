@@ -707,14 +707,12 @@
 }
 .deposition-name{
   color: $steligence-orange;
-  font-size: 20px;
   white-space: nowrap;
   margin: 0;
   margin-bottom: 0;
   font-weight: bold;
   display: inline-block;
   padding: 0;
-
   margin-right: 100%;
 }
 .deposition-title{
@@ -738,11 +736,12 @@
     height: 100%;
     width: 55%;
     p{
-      font-size: 16px;
+      font-size: 15px;
       font-weight: bold;
     }
     div{
-      height: 64px;
+      padding: 0;
+      height: 0;
     }
   }
 }
@@ -750,9 +749,9 @@
 .grohmann{
   background-image: image-url('Grohmann-M.png');
   background-repeat: no-repeat;
-  background-position: 60% 50%;
+  background-position: 57% 50%;
   div{
-    padding: 16px;
+    padding: 15px;
     height: 100%;
     width: 55%;
     p{
@@ -760,7 +759,8 @@
       font-weight: bold;
     }
     div{
-      height:120px;
+      padding: 0;
+      height:10px;
     }
   }
 }
@@ -768,9 +768,9 @@
 .ludkovsky{
   background-image: image-url('Ludkovsky-G.png');
   background-repeat: no-repeat;
-  background-position: 55% 50%;
+  background-position: 54% 50%;
   div{
-    padding: 16px;
+    padding: 15px;
     height: 100%;
     width: 55%;
     p{
@@ -778,7 +778,8 @@
       font-weight: bold;
     }
     div{
-      height: 60px;
+      padding: 0;
+      height: 0;
     }
   }
 }
@@ -1078,12 +1079,12 @@
       }
       .deposition-name{
         width: auto;
-        font-size: 16px;
+        font-size: 14px;
         background-color: transparent;
       }
       .deposition-title{
         width: auto;
-        font-size: 14px;
+        font-size: 12px;
         background-color: transparent;
       }
       div{
@@ -1102,12 +1103,12 @@
      }
      .deposition-name{
        width: auto;
-       font-size: 16px;
+       font-size: 14px;
        background-color: transparent;
      }
      .deposition-title{
        width: auto;
-       font-size: 14px;
+       font-size: 12px;
        background-color: transparent;
      }
      div{
@@ -1126,12 +1127,12 @@
      }
      .deposition-name{
        width: auto;
-       font-size: 16px;
+       font-size: 14px;
        background-color: transparent;
      }
      .deposition-title{
        width: auto;
-       font-size: 14px;
+       font-size: 12px;
        background-color: transparent;
      }
      div{
