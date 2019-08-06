@@ -79,7 +79,7 @@
 }
 
 .desktop-hidden{
-  display: none;
+  display: block;
 }
 
 .line-recolor{
@@ -206,13 +206,11 @@
 // FIM BANNER PRINCIPAL -->
 
 // INICIO PILARES -->
-.cornerstone-carousel{
-}
-
 #pilares {
  width: 100%;
  text-align: center;
- padding: 3%;
+ padding: 8%;
+ margin-bottom: 40px;
  img{
   width: 200px;
  }
@@ -230,9 +228,8 @@
   font-weight: bold;
 }
 .cornerstone-wrapper{
-  background-image: image-url('cornerstone-bg.png');
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-color: $steligence-catalog;
+  position: relative;
 }
 .cornerstone-image-wrapper{
   width: 100%;
@@ -242,12 +239,10 @@
 }
 .cornerstone-text{
   font-weight: lighter;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .white-stripes{
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 1;
 }
 .orange-stripes{
@@ -261,9 +256,8 @@
 // INICIO DIFERENCIAIS -->
 .differential-wrapper{
   padding: 7%;
-  padding-bottom: 0;
   background-image: image-url('differential-bg.png');
-  background-position: 34% 80%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   background-color: $steligence-light;
 }
@@ -951,11 +945,31 @@
   #pilares{
     display: flex !important;
     height: 485px;
+    padding: 3%;
+    margin: 0;
+    .desktop-row-wrapper{
+      margin: 0 calc(50vw - 450px);
+    }
     .desktop-column{
       display: inline-block;
       text-align: left;
     }
+
   }
+    .orange-stripes{
+      display: none;
+    }
+    .white-stripes{
+      display: none;
+    }
+
+  .cornerstone-wrapper{
+    background-image: image-url('cornerstone-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $steligence-catalog;
+  }
+
 
   // DIFERENCIAIS
   .differential-wrapper{
@@ -976,6 +990,15 @@
     .small-product-title{
       display: none;
     }
+  }
+
+  .differential-wrapper{
+    padding: 0;
+    height: 500px;
+    background-image: image-url('differential-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $steligence-light;
   }
 
   // CATALOGO
