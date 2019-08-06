@@ -9,12 +9,12 @@
   <div class="navbar <%= 'logged-navbar' if user_signed_in? %>" id="navbar">
     <div class="nav-items d-none d-md-flex">
       <div class="nav-item-left">
-        <%= link_to "STELIGENCE", root_path, class: "navbar-links", style: "font-weight: bold;" %>
-        <%= link_to "PILARES", root_path(anchor: 'pilares'), class: "navbar-links" %>
-        <%= link_to "DIFERENCIAIS", root_path(anchor: 'diferenciais'), class: "navbar-links" %>
-        <%= link_to "CATÁLOGO", root_path(anchor: 'catalogo'), class: "navbar-links" %>
-        <%= link_to "DEPOIMENTOS", root_path(anchor: 'depoimentos'), class: "navbar-links" %>
-        <%= link_to "CONTATO", root_path(anchor: 'contato'), class: "navbar-links" %>
+        <%= link_to "STELIGENCE", '#inicio', class: "navbar-links", style: "font-weight: bold;" %>
+        <%= link_to "PILARES", '#pilares', class: "navbar-links" %>
+        <%= link_to "DIFERENCIAIS", '#diferenciais', class: "navbar-links" %>
+        <%= link_to "CATÁLOGO", '#catalogo', class: "navbar-links" %>
+        <%= link_to "DEPOIMENTOS", '#depoimentos', class: "navbar-links" %>
+        <%= link_to "CONTATO", '#contato', class: "navbar-links" %>
       </div>
       <div class="nav-item-right">
         <!-- Links na lateral direita da navbar -->

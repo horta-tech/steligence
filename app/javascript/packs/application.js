@@ -1,6 +1,22 @@
 import "bootstrap";
 import "slick-carousel";
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('wooo')
+        let yCoordinate = document.querySelector(this.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+        let yOffset = -80;
+
+        window.scrollTo({
+            behavior: 'smooth',
+            top: yCoordinate + yOffset
+        });
+    });
+});
+
+
+
 $(".banner-carousel").slick({
   infinite: false,
   slidesToShow: 1,
