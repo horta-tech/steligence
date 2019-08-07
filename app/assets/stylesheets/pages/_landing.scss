@@ -19,6 +19,10 @@
   }
 }
 
+#fale-conosco {
+  display: none;
+}
+
 // INICIO BANNER PRINCIPAL -->
 .banner-carousel{
   height: 600px;
@@ -98,7 +102,7 @@
 }
 
 .description-text{
-  text-align: justify;
+  text-align: left;
   word-spacing: 0;
   padding: 0 14%;
   font-size: 12px;
@@ -810,7 +814,7 @@
   color: white;
   div{
     padding: 16px;
-    padding-top: 323px;
+    padding-top: 260px;
     padding-left: 33px;
     height: 100%;
     width: 56%;
@@ -962,6 +966,19 @@
 
 // LAYOUT DESKTOP
 @media(min-width: 576px){
+  #fale-conosco {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: calc(50vw - 450px);
+    z-index: 1000;
+  }
+
+  #inicio {
+    position: relative;
+    z-index: 500;
+  }
+
   .mobile-hidden{
     display: block;
   }
@@ -1020,6 +1037,9 @@
       width: 80%;
       margin-left: 100px;
       text-align: left;
+      h5 {
+        font-family: $vagrounded-regular;
+      }
     }
 
     .space-title{
@@ -1029,6 +1049,7 @@
       margin-top: 22%;
       margin-left: 20%;
       h5{
+        font-family: $vagrounded-regular;
         font-size: 30px;
       }
     }
@@ -1048,6 +1069,8 @@
 
   .banner1-logo{
     width: 90%;
+    margin-top: 80px;
+    padding-right: 0;
     object-fit: scale-down;
   }
 
