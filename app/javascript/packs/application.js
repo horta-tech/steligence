@@ -37,8 +37,8 @@ $(".cornerstone-carousel").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  prevArrow: "<div class='left-arrow' style='left: -30px;'></div>",
-  nextArrow: "<div class='right-arrow' style='right: -30px;'></div>",
+  prevArrow: "<div class='left-arrow' style='left: 60px;'></div>",
+  nextArrow: "<div class='right-arrow' style='right: 60px;'></div>",
   dots: false
 });
 
@@ -47,8 +47,8 @@ $(".differential-carousel").slick({
   slidesToShow: 2,
   slidesToScroll: 2,
   arrows: true,
-  prevArrow: "<div class='left-arrow' style='left: -100px;'></div>",
-  nextArrow: "<div class='right-arrow' style='right: -30px;'></div>",
+  prevArrow: "<div class='left-arrow' style='left: -30px;'></div>",
+  nextArrow: "<div class='right-arrow' style='right: 60px;'></div>",
   dots: false,
   responsive: [
     {

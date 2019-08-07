@@ -234,15 +234,12 @@
  text-align: center;
  padding: 8%;
  margin-bottom: 40px;
- img{
-  width: 200px;
- }
 }
 .cornerstone-topic{
   display: inline-block;
   border-style: solid;
   border-radius: 8px;
-  padding: 6px;
+  padding: 2px;
   margin: 6px;
   border-color: $steligence-gray;
   border-width: thin;
@@ -254,13 +251,36 @@
   background-color: $steligence-catalog;
   position: relative;
 }
+.cornerstone-image-wrapper-intro{
+  height: 150px;
+  margin-top: 130px;
+  margin-left: 70px;
+  img{
+    object-fit: scale-down;
+  }
+  display: flex;
+  justify-content: center;
+}
+.cornerstone-intro{
+  font-size: 16px;
+  width: 180px;
+  padding-left: 35px;
+  line-height: 1.6em;
+  margin-top: 35%;
+  margin-left: 20%;
+}
+
 .cornerstone-image-wrapper{
+  img{
+    height: 200px;
+  }
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 80px;
 }
 .cornerstone-text{
+  width: 80%;
   margin-top: 40px;
   font-family: $vagrounded-regular;
 }
@@ -1027,7 +1047,7 @@
   }
 
   .banner1-logo{
-    width: 70%;
+    width: 90%;
     object-fit: scale-down;
   }
 
