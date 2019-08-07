@@ -413,6 +413,19 @@
   margin-bottom: 320px;
 }
 
+#intro-margin{
+  p{
+    padding: 0 24px;
+    padding-bottom: 32px;
+    font-size: 18px;
+  }
+}
+
+.catalog-logo{
+  width: 180px;
+  margin-left: 50%;
+}
+
 .catalog-description{
   display: flex;
   width: 100%;
@@ -743,6 +756,7 @@
 }
 
 .catalog-intro{
+  padding: 0 8px;
   p{
     font-size: 14px;
     margin-top: 20px;
@@ -761,7 +775,7 @@
     width: 50px;
     text-align: right;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -1133,6 +1147,10 @@
   // CATALOGO
   #catalogo{
     margin: 0;
+  }
+
+  .catalog-logo{
+    width: 300px;
   }
 
   #intro-margin{
