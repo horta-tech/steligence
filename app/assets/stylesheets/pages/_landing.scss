@@ -13,6 +13,10 @@
 .registered {
   font-size: 70% !important;
   vertical-align: super !important;
+  h5{
+    font-size: 70% !important;
+    vertical-align: super !important;
+  }
 }
 
 // INICIO BANNER PRINCIPAL -->
@@ -952,6 +956,10 @@
 
   .desktop-banner{
     flex-direction: row !important;
+    margin: 0 calc(50vw - 450px);
+  }
+
+  .desktop-banner-reverse{
     margin: 0 calc(50vw - 450px);
   }
 
