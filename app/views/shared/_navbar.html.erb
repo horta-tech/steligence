@@ -13,7 +13,7 @@
           STELIGENCE<span class="registered">®</span>
         <% end %>
         <%= link_to "PILARES", '#pilares', class: "navbar-links" %>
-        <%= link_to "DIFERENCIAIS", '#diferenciais', class: "navbar-links" %>
+        <%= link_to "DIFERENCIAIS", '#diferencial', class: "navbar-links" %>
         <%= link_to "CATÁLOGO", '#catalogo', class: "navbar-links" %>
         <%= link_to "DEPOIMENTOS", '#depoimentos', class: "navbar-links" %>
         <%= link_to "CONTATO", '#contato', class: "navbar-links" %>
@@ -34,11 +34,14 @@
             <i class="fa fa-bars"></i></a>
            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuLink">
             <!-- Login / Logout links -->
-                <%= link_to "PILARES", root_path(anchor: 'pilares'), class: "dropdown-item" %>
-                <%= link_to "DIFERENCIAIS", root_path(anchor: 'diferenciais'), class: "dropdown-item" %>
-                <%= link_to "CATÁLOGO", root_path(anchor: 'catalogo'), class: "dropdown-item" %>
-                <%= link_to "DEPOIMENTOS", root_path(anchor: 'depoimentos'), class: "dropdown-item" %>
-                <%= link_to "CONTATO", root_path(anchor: 'contato'), class: "dropdown-item" %>
+                <%= link_to '#inicio', class: "dropdown-item" do %>
+                  STELIGENCE<span class="registered">®</span>
+                <% end %>
+                <%= link_to "PILARES", '#pilares', class: "dropdown-item" %>
+                <%= link_to "DIFERENCIAIS", '#diferencial', class: "dropdown-item" %>
+                <%= link_to "CATÁLOGO", '#catalogo', class: "dropdown-item" %>
+                <%= link_to "DEPOIMENTOS", '#depoimentos', class: "dropdown-item" %>
+                <%= link_to "CONTATO", '#contato', class: "dropdown-item" %>
           </div>
         </div>
         <%= link_to root_path, class: "nav-item-logo" do %>

@@ -1,20 +1,27 @@
 import "bootstrap";
 import "slick-carousel";
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        console.log('wooo')
-        let yCoordinate = document.querySelector(this.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
-        let yOffset = -80;
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         console.log('wooo')
+//         let yCoordinate = document.querySelector(this.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+//         let yOffset = -80;
 
-        window.scrollTo({
-            behavior: 'smooth',
-            top: yCoordinate + yOffset
-        });
-    });
+//         window.scrollTo({
+//             behavior: 'smooth',
+//             top: yCoordinate + yOffset
+//         });
+//     });
+// });
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    console.log('jquery wooo')
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 80
+    }, 500);
 });
-
 
 
 $(".banner-carousel").slick({
