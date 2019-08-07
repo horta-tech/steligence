@@ -14,47 +14,35 @@
 // $my-font: "Font Name";
 
 @font-face {
-  font-family: 'Roboto';
-  src: font-url('ROBOTO-REGULAR.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Vagrounded Thin';
+  src: font-url('VAGRoundedStd-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Vagrounded Light';
+  src: font-url('VAGRoundedStd-Light.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: font-url('ROBOTO-THIN.TTF') format('truetype');
-  font-weight: thin;
-  font-style: normal;
+  font-family: 'Vagrounded Bold';
+  src: font-url('VAGRoundedStd-Bold.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'MinionPro';
+  src: font-url('MinionPro-Regular.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: font-url('ROBOTO-MEDIUM.TTF') format('truetype');
-  font-weight: medium;
-  font-style: normal;
+  font-family: 'Helvetica';
+  src: font-url('Helvetica.ttc') format('truetype');
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: font-url('ROBOTO-BLACK.TTF') format('truetype');
-  font-weight: black;
-  font-style: normal;
-}
+$vagrounded-thin: "Vagrounded Thin", "Helvetica", "Open Sans";
+$vagrounded-regular: "Vagrounded Light", "Helvetica", "Open Sans";
+$vagrounded-bold: "Vagrounded Bold", "Helvetica", "Open Sans";
 
-@font-face {
-  font-family: 'Vagrounded';
-  src: font-url('vagrounded-thin.otf') format('truetype');
-  font-weight: medium;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vagrounded';
-  src: font-url('vagrounded-black.otf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
+$body-font: $vagrounded-regular;
+$headers-font: $vagrounded-bold;
 
 
-$body-font: "Vagrounded", "Open Sans", "Roboto", "Helvetica", "sans-serif";
-$headers-font: "Vagrounded", "Open Sans", "Roboto", "Helvetica", "sans-serif";

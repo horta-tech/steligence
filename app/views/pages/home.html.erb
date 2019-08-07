@@ -21,7 +21,7 @@
     </div>
     <div class="desktop-column">
       <p class="description-text">Uma metodologia completa, com uma abordagem holística para atender às exigências da construção sustentável. Projetado para dar suporte a incorporadoras, arquitetos, engenheiros e construtoras, no desenvolvimento de edificações inovadoras, rentáveis e prontas para um futuro que já começou.</p>
-      <p class="description-text">Se você possui uma obra de grande porte ou de alta padronização, e está com o projeto aberto a mudanças, entre em contato conosco e entenda o que o Steligence® pode fazer por você.</p>
+      <p class="description-text">Se você está desenvolvendo um projeto de grande porte ou de alta padronização, aberto a novas possibilidades construtivas, entre em contato conosco e entenda o que o Steligence<span class="registered">®</span> pode fazer por você.</p>
       <div class="button-position" >
         <p class="more-info"><%= link_to 'SAIBA MAIS', '#catalogo' %></p>
       </div>
@@ -33,8 +33,8 @@
     <div class="desktop-column">
       <div class="quote">
         <p>Precisamos adotar uma visão holística... e explorar os materiais com novos olhos, criando edifícios com módulos que se complementam e otimizando a interação entre cada componente.</p>
-        <h5>Prof. Oliver Vassart</h5>
-        <p>Chief Executive Officer Steligence®</p>
+        <h5>Prof. Olivier Vassart</h5>
+        <p>Chief Executive Officer Steligence<span class="registered">®</span></p>
       </div>
       <div class="button-position-quote" >
         <p class="more-info-color"><%= link_to 'SAIBA MAIS', '#catalogo' %></p>
@@ -71,7 +71,7 @@
               <h5>Escolha</h5>
               <h5>a construção inteligente.</h5>
               <h5>Esolha Aço.</h5>
-              <h5>Escolha Steligence®.</h5>
+              <h5>Escolha Steligence<span class="registered">®</span>.</h5>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@
         </div>
       </div>
       <div class="desktop-column">
-        <p class="cornerstone-text">Avalia métricas ambientais e os aspectos ecológicos dos produtos e métodos utilizados na construção do empreendimento. Neste pilar, os indicadores de desempenho determinados pelo Steligence® são:</p>
+        <p class="cornerstone-text">Avalia métricas ambientais e os aspectos ecológicos dos produtos e métodos utilizados na construção do empreendimento. Neste pilar, os indicadores de desempenho determinados pelo Steligence<span class="registered">®</span> são:</p>
         <p class="cornerstone-topic">Eficiência Energética</p><br>
         <p class="cornerstone-topic">Consumo de Recursos Naturais</p><br>
         <p class="cornerstone-topic">Emissões Nocivas</p><br>
@@ -130,7 +130,7 @@
         </div>
       </div>
       <div class="desktop-column">
-        <p class="cornerstone-text">Mensura os custos da construção e métricas de valores. No âmbito Econômico, o Steligence® determinou três indicadores de desempenho:</p>
+        <p class="cornerstone-text">Mensura os custos da construção e sua eficiência. No âmbito Econômico, o Steligence<span class="registered">®</span> determinou três indicadores de desempenho:</p>
         <p class="cornerstone-topic">Custo global do empreendimento:<br> Construção e Operação</p><br>
         <p class="cornerstone-topic">Velocidade da Construção</p><br>
         <p class="cornerstone-topic">Qualidade da Construção</p><br>
@@ -157,16 +157,16 @@
 
 <!-- INICIO DIFERENCIAIS -->
 <% titles = [
-  'Otimização de espaço',
+  'Otimização <br>de espaço',
   'Flexibilidade arquitetônica',
-  'Construção mais leve',
-  'Velocidade da construção',
-  'Menor custo do empreendimento',
-  'Redução de impactos ambientais',
+  'Construção <br>mais leve',
+  'Velocidade <br>da construção',
+  'Menor custo <br>do empreendimento',
+  'Redução <br>de impactos <br>ambientais',
   'Aumento de pontuação em certificações',
-  'Logística de canteiro',
-  'Segurança de canteiro',
-  'Melhoria do conforto'
+  'Logística <br>de canteiro',
+  'Segurança <br>de canteiro',
+  'Melhoria <br>do conforto'
 ]%>
 <% texts = [
   'A utilização de sistemas construtivos, como a protensão, pode proporcionar redução das distâncias entre pavimentos, e também nas dimensões de pilares e vigas, gerando mais espaço interno livre e economias significativas em elementos de fachada e revestimentos internos.',
@@ -180,7 +180,7 @@
   'O uso de soluções como as Fôrmas incorporadas proporciona mais segurança no canteiro da obra, devido à diminuição de operações in loco e à menor necessidade mão de obra.',
   'Coberturas e fachadas em aço são soluções isolantes termoacústicas que oferecem maior conforto e menores gastos com energia.'
 ]%>
-<div class="differential-wrapper">
+<div id="diferencial" class="differential-wrapper">
   <div class="steligence-container">
 
   <div class="desktop-column-wrapper">
@@ -188,7 +188,7 @@
   <div class="desktop-column">
     <div class="differential-main-title">
       <div class="differential-10">
-        <p>Principais diferenciais de uma obra com Steligence®</p>
+        <p>Principais diferenciais de uma obra com Steligence<span class="registered">®</span></p>
       </div>
       <%= image_tag('logo-steligence-cor.png', style: 'width: 120px; object-fit: contain; margin-top: -88px;', class: 'desktop-hidden') %>
     </div>
@@ -200,7 +200,7 @@
         <div id="diferenciais">
           <%= image_tag ("#{number}.png"), class: 'differential-image' %>
           <p class="differential-title">
-            <%= titles[number - 1] %>
+            <%= raw titles[number - 1] %>
           </p>
           <p class="differential-text">
             <%= texts[number - 1] %>
@@ -249,7 +249,7 @@
       <div class="catalog-text-box">
         <div id="intro-margin" class="catalog-intro desktop-margin show-layer">
           <%= image_tag('logo-steligence-cor.png', style:'width: 300px;') %>
-          <p>O Steligence® é a oportunidade de otimizar todos os aspectos de um projeto, comparando os principais métodos construtivos do mercado com as soluções Best-in-Class da ArcelorMittal, considerando todas as etapas construtivas.</p>
+          <p>O Steligence<span class="registered">®</span> é a oportunidade de otimizar todos os aspectos de um projeto, comparando os principais métodos construtivos do mercado com as soluções Best-in-Class da ArcelorMittal, considerando todas as etapas construtivas.</p>
         </div>
 
         <div class="catalog-fundacao desktop-margin">
@@ -286,8 +286,8 @@
               <p>A aplicação em lajes e pisos possibilita aumento de produtividade na montagem das etapas estruturais e consequente redução de custos. Seu uso ainda garante maior qualidade de execução,por se tratar de processo industrializado de fabricação. Além disso, a ArcelorMittal propõe otimizações na aplicação, através da produção de abrangente número de telas especiais - que podem ser fabricadas sob medida, reduzindo perdas da ordem de 20%.</p>
             </div>
             <div>
-              <p>Dramix®</p>
-              <p>O uso de fibras de aço Dramix® garante um controle de fissuração elevado, além de proporcionar maior estabilidade e integridade às juntas de dilatação do concreto. Além disso, permite um aumento de produtividade pela redução de mão de obra e elimina cortes e perdas de aço no processo de fabricação.</p>
+              <p>Dramix<span class="registered">®</span></p>
+              <p>O uso de fibras de aço Dramix<span class="registered">®</span> garante um controle de fissuração elevado, além de proporcionar maior estabilidade e integridade às juntas de dilatação do concreto. Além disso, permite um aumento de produtividade pela redução de mão de obra e elimina cortes e perdas de aço no processo de fabricação.</p>
             </div>
           </div>
         </div>
@@ -318,8 +318,8 @@
           </div>
           <div class="laje-carousel">
             <div>
-              <p>Trelifácil®</p>
-              <p>Desenvolvida para atender às exigências do mercado por produtos que racionalizem os processos construtivos e diminuam seus custos, é composta por treliça de aço, espaçadores plásticos e fôrma de aço zincado - que confere maior resistência à corrosão. A Trelifácil® possui um peso cerca de 80% menor quando comparado ao de uma vigota comum, o que oferece leveza, praticidade, qualidade e simplicidade na aplicação.</p>
+              <p>Trelifácil<span class="registered">®</span></p>
+              <p>Desenvolvida para atender às exigências do mercado por produtos que racionalizem os processos construtivos e diminuam seus custos, é composta por treliça de aço, espaçadores plásticos e fôrma de aço zincado - que confere maior resistência à corrosão. A Trelifácil<span class="registered">®</span> possui um peso cerca de 80% menor quando comparado ao de uma vigota comum, o que oferece leveza, praticidade, qualidade e simplicidade na aplicação.</p>
             </div>
             <div>
               <p>Steel Deck - Polydeck 59S</p>
@@ -340,7 +340,7 @@
           </div>
           <div class="vedacao-carousel">
             <div>
-              <p>Murfor®</p>
+              <p>Murfor<span class="registered">®</span></p>
               <p>Reforço de aço para alvenaria produzido pela Belgo Bekaert Arames, que proporciona melhor desempenho estrutural, previne trincas, aumenta a resistência e oferece novas possibilidades arquitetônicas. Sua aplicação reduz a necessidade de manutenção do edifício e oferece melhor durabilidade construtiva.</p>
             </div>
             <div>
@@ -366,8 +366,8 @@
               <p>Os painéis Termilor, nas suas versões Termilor Roof para coberturas e Termilor Wall para fachadas, utilizam poliisocianurato (PIR) injetado como isolante térmico em espessuras de 30, 40 ou 50 mm. São voltados para edificações nas quais o conforto térmico é uma exigência de projeto. Sua capacidade isolante e sua estética os tornaram peças frequentes nas coberturas e fachadas de edificações onde conforto térmico e arquitetura tenham que ser resolvidos por um único produto.</p>
             </div>
             <div>
-              <p>Magnelis®</p>
-              <p>Revestimento metálico inovador, que possui camada de proteção estável e duradoura oferecendo maior proteção em bordas cortadas e perfurações. Seu uso resulta em uma proteção altamente eficaz contra corrosão, sendo opção para aplicações externas e internas como coberturas, terças de telhado, revestimentos de fachadas, fôrma colaborante steel deck, perfis leves, chapas expandidas ou perfuradas, entre outros. Magnelis® é recomendado para o uso em ambiente agrícola, como galpões para cultura de animais, onde há presença de amônia. Graças à sua exclusiva composição de zinco, 3,5% de alumínio e 3% de magnésio, Magnelis® responde à demanda por maior durabilidade e redução dos custos de manutenção.</p>
+              <p>Magnelis<span class="registered">®</span></p>
+              <p>Revestimento metálico inovador, que possui camada de proteção estável e duradoura oferecendo maior proteção em bordas cortadas e perfurações. Seu uso resulta em uma proteção altamente eficaz contra corrosão, sendo opção para aplicações externas e internas como coberturas, terças de telhado, revestimentos de fachadas, fôrma colaborante steel deck, perfis leves, chapas expandidas ou perfuradas, entre outros. Magnelis<span class="registered">®</span> é recomendado para o uso em ambiente agrícola, como galpões para cultura de animais, onde há presença de amônia. Graças à sua exclusiva composição de zinco, 3,5% de alumínio e 3% de magnésio, Magnelis<span class="registered">®</span> responde à demanda por maior durabilidade e redução dos custos de manutenção.</p>
             </div>
           </div>
         </div>
@@ -404,7 +404,7 @@
   </div>
   <div id="depoimentos" class="ludkovsky">
     <div class="steligence-container">
-      <p>‘’Desenvolvemos o Steligence® porque acredito que podemos ajudar arquitetos, engenheiros e desenvolvedores a construir edifícios de forma mais sustentável e econômica.’‘</p>
+      <p>‘’Desenvolvemos o Steligence<span class="registered">®</span> porque acredito que podemos ajudar arquitetos, engenheiros e desenvolvedores a construir edifícios de forma mais sustentável e econômica.’‘</p>
       <div></div>
       <p class="deposition-name">Greg Ludkovsky</p>
       <p class="deposition-title">Vice Presidente da ArcelorMittal.</p>
