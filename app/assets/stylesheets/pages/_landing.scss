@@ -10,6 +10,11 @@
   }
 }
 
+.registered {
+  font-size: 70% !important;
+  vertical-align: super !important;
+}
+
 // INICIO BANNER PRINCIPAL -->
 .banner-carousel{
   height: 600px;
@@ -239,7 +244,7 @@
   border-width: thin;
   color: $steligence-orange;
   font-size: 14px;
-  font-weight: normal;
+  font-family: $vagrounded-bold;
 }
 .cornerstone-wrapper{
   background-color: $steligence-catalog;
@@ -252,9 +257,10 @@
   margin-top: 80px;
 }
 .cornerstone-text{
-  font-weight: lighter;
   margin-top: 40px;
+  font-family: $vagrounded-regular;
 }
+
 .white-stripes{
   position: absolute;
   z-index: 1;
@@ -283,11 +289,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   p{
-    line-height: 1.5rem;
+    line-height: 1.5em;
     font-size: 12px;
     margin-left: 100px;
     margin-top: 30px;
-    width: 100px;
+    width: 90px;
+    font-family: $vagrounded-thin;
   }
 }
 
@@ -329,8 +336,12 @@
 
 .differential-title{
   color: $steligence-orange;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: $vagrounded-regular;
+  line-height: 1.1em;
+  letter-spacing: 1px;
+  height: 42px;
 }
 
 .differential-text{
@@ -1029,6 +1040,7 @@
       font-size: 20px;
       margin-left: 150px;
       margin-top: 44px;
+      width: 140px;
     }
   }
   .differential-main-title{
