@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :allow_ip]
   skip_before_action :require_admin!, only: [:home, :allow_ip]
-  skip_before_action :staging_mode, only: [:allow_ip]
+  # skip_before_action :staging_mode, only: [:allow_ip]
   def home
     @lead = Lead.new
   end

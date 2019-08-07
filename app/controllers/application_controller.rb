@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :authenticate_user!
   before_action :require_admin!, unless: :devise_controller?
-  before_action :staging_mode
+  # before_action :staging_mode
 
   private
 
