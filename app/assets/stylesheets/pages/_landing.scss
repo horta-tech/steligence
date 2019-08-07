@@ -261,17 +261,17 @@
   margin-left: 70px;
   img{
     object-fit: scale-down;
+    padding-right: 50px;
   }
   display: flex;
   justify-content: center;
 }
 .cornerstone-intro{
-  font-size: 16px;
-  width: 180px;
-  padding-left: 35px;
-  line-height: 1.6em;
-  margin-top: 35%;
-  margin-left: 20%;
+
+    font-size: 19px;
+    width: 264px;
+    line-height: 1.6em;
+    margin: 30px auto;
 }
 
 .cornerstone-image-wrapper{
@@ -1126,6 +1126,24 @@
     .white-stripes{
       display: none;
     }
+  .cornerstone-image-wrapper-intro{
+    height: 150px;
+    margin-top: 130px;
+    margin-left: 70px;
+    img{
+      object-fit: scale-down;
+    }
+    display: flex;
+    justify-content: center;
+  }
+  .cornerstone-intro {
+    font-size: 16px;
+    width: 180px;
+    padding-left: 35px;
+    line-height: 1.6em;
+    margin-top: 35%;
+    margin-left: 20%;
+  }
 
   .cornerstone-wrapper{
     background-image: image-url('cornerstone-bg.png');

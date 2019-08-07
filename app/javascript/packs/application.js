@@ -39,7 +39,17 @@ $(".cornerstone-carousel").slick({
   arrows: true,
   prevArrow: "<div class='left-arrow' style='left: 60px;'></div>",
   nextArrow: "<div class='right-arrow' style='right: 60px;'></div>",
-  dots: false
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        arrows: true,
+        prevArrow: "<div class='left-arrow' style='left: 10px;'></div>",
+        nextArrow: "<div class='right-arrow' style='right: 10px;'></div>",
+      }
+    }
+  ]
 });
 
 $(".differential-carousel").slick({
