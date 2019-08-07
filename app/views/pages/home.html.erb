@@ -3,7 +3,7 @@
 
 <div class="banner-carousel">
   <div id="main-banner" style="background: url(<%= image_path('banner-01.png') %>); background-position: 30% 50%;">
-
+    <div class="desktop-row-wrapper desktop-banner">
     <div class="desktop-column">
       <%= image_tag('logo-steligence-white.png', class: 'banner1-logo') %>
       <div class="space-line">
@@ -25,12 +25,12 @@
       <div class="button-position" >
         <p class="more-info"><%= link_to 'SAIBA MAIS', '#catalogo' %></p>
       </div>
+      </div>
     </div>
-
   </div>
+
   <div id="main-banner" class="reverse-desktop banner-02-bg">
     <div class="desktop-column">
-
       <div class="quote">
         <p>Precisamos adotar uma visão holística... e explorar os materiais com novos olhos, criando edifícios com módulos que se complementam e otimizando a interação entre cada componente.</p>
         <h5>Prof. Oliver Vassart</h5>
@@ -55,48 +55,50 @@
         <div></div>
         <div></div>
       </div>
-
     </div>
-
   </div>
-  <div id="main-banner" style="background: url(<%= image_path('banner-02.png') %>); background-position: 70% 50%;">
-    <div class="desktop-column-wrapper">
 
-      <div class="desktop-row-wrapper">
-        <div class="desktop-column">
-          <%= image_tag('logo-steligence-white.png', class: 'banner3-logo') %>
-        </div>
-        <div class="desktop-column">
-          <div class="sub-header">
-            <h5>Escolha</h5>
-            <h5>a construção inteligente.</h5>
-            <h5>Esolha Aço.</h5>
-            <h5>Escolha Steligence®.</h5>
+  <div id="main-banner" style="background: url(<%= image_path('banner-02.png') %>); background-position: 70% 50%;">
+    <div class="desktop-row-wrapper desktop-banner">
+      <div class="desktop-column-wrapper">
+
+        <div class="desktop-row-wrapper">
+          <div class="desktop-column">
+            <%= image_tag('logo-steligence-white.png', class: 'banner3-logo') %>
+          </div>
+          <div class="desktop-column">
+            <div class="sub-header">
+              <h5>Escolha</h5>
+              <h5>a construção inteligente.</h5>
+              <h5>Esolha Aço.</h5>
+              <h5>Escolha Steligence®.</h5>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="spacer"></div>
+        <div class="spacer"></div>
 
-      <div class="space-line" style="padding: 0;">
-        <span class="mobile-hidden"></span>
-        <div class="mobile-hidden"></div>
-        <span class="mobile-hidden"></span>
-        <div class="mobile-hidden"></div>
-        <span class="mobile-hidden"></span>
-        <div class="large-drop"></div>
-        <div class="mobile-hidden"></div>
-        <div class="mobile-hidden"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <span class="mobile-hidden"></span>
-        <div></div>
-        <div class="large-drop mobile-hidden"></div>
-        <span class="desktop-hidden"></span>
+        <div class="space-line" style="padding: 0;">
+          <span class="mobile-hidden"></span>
+          <div class="mobile-hidden"></div>
+          <span class="mobile-hidden"></span>
+          <div class="mobile-hidden"></div>
+          <span class="mobile-hidden"></span>
+          <div class="large-drop"></div>
+          <div class="mobile-hidden"></div>
+          <div class="mobile-hidden"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <span class="mobile-hidden"></span>
+          <div></div>
+          <div class="large-drop mobile-hidden"></div>
+          <span class="desktop-hidden"></span>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
 <!-- FIM BANNER PRINCIPAL -->
 
@@ -122,7 +124,6 @@
     </div>
 
     <div id="pilares">
-      <div class="desktop-row-wrapper">
       <div class="desktop-column">
         <div class="cornerstone-image-wrapper">
           <%= image_tag('economica.png') %>
@@ -134,26 +135,22 @@
         <p class="cornerstone-topic">Velocidade da Construção</p><br>
         <p class="cornerstone-topic">Qualidade da Construção</p><br>
       </div>
-      </div>
     </div>
 
     <div id="pilares">
-      <div class="desktop-row-wrapper">
-        <div class="desktop-column">
-          <div class="cornerstone-image-wrapper">
-            <%= image_tag('social.png') %>
-          </div>
-        </div>
-        <div class="desktop-column">
-          <p class="cornerstone-text">Mensura a aceitação social e o bem-estar humano quanto à construção. Nesse quesito, o Steligence determinou os seguintes indicadores de desempenho:</p>
-          <p class="cornerstone-topic">Conforto Térmico</p><br>
-          <p class="cornerstone-topic">Conforto Acústico</p><br>
-          <p class="cornerstone-topic">Flexibilidade de Design</p><br>
-          <p class="cornerstone-topic">Segurança e Incômodo <br>do Processo de Construção</p>
+      <div class="desktop-column">
+        <div class="cornerstone-image-wrapper">
+          <%= image_tag('social.png') %>
         </div>
       </div>
+      <div class="desktop-column">
+        <p class="cornerstone-text">Mensura a aceitação social e o bem-estar humano quanto à construção. Nesse quesito, o Steligence determinou os seguintes indicadores de desempenho:</p>
+        <p class="cornerstone-topic">Conforto Térmico</p><br>
+        <p class="cornerstone-topic">Conforto Acústico</p><br>
+        <p class="cornerstone-topic">Flexibilidade de Design</p><br>
+        <p class="cornerstone-topic">Segurança e Incômodo <br>do Processo de Construção</p>
+      </div>
     </div>
-
   </div>
 </div>
 <!-- FIM PILARES -->
@@ -177,11 +174,11 @@
   'Menor peso do edifício atuando nas fundações, quando aplicadas estruturas metálicas e vedações leves. Menos materiais promovem também redução de caminhões e tráfego na obra e em seu entorno.',
   'Sistemas construtivos industrializados resultam em maior qualidade e rapidez na execução, geram menos resíduos e promovem a redução de custos.',
   'Steligence® apresenta, através do comparativo entre sistemas construtivos qual tem o menor custo global de construção, podendo chegar a economias da ordem de 20%.',
-  'A utilização de materiais de alto desempenho contra a corrosão, como o Magnelis®, permite atingir reduções significativas de impactos ambientais e de custos de manutenção devido ao aumento de vida útil dos materiais.',
-  'A aplicação de produtos ArcelorMittal, com as respectivas Declarações Ambientais de produto tipo 3 (DAP), permite atender os requisitos das mais avançadas certificações ambientais como LEED, AQUA e BREEAM.',
-  'Soluções e métodos construtivos industrializados como armaduras pré-montadas reduzem a necessidade de espaço no canteiro de obras além de facilitar o planejamento e acompanhamento do cronograma de obras.',
-  'O uso de soluções como as Fôrmas incorporadas proporcionam mais segurança no canteiro da obra devido à diminuição de operações in loco e necessidade de menos mão de obra.',
-  'Coberturas e fachadas em aço em soluções isolantes termoacústicas oferecem maior conforto e menores gastos com energia.'
+  'A utilização de materiais de alto desempenho contra a corrosão, como o Magnelis®, permite atingir reduções significativas de impactos ambientais e de custos de manutenção, devido ao aumento da vida útil dos materiais.',
+  'A aplicação de produtos ArcelorMittal, com as respectivas Declarações Ambientais de Produto Tipo 3 (DAP), permite atender aos requisitos das mais avançadas certificações ambientais como LEED, AQUA e BREEAM.',
+  'Soluções e métodos construtivos industrializados como armaduras pré-montadas reduzem a necessidade de espaço no canteiro de obras, além de facilitar o planejamento e acompanhamento do cronograma de obras.',
+  'O uso de soluções como as Fôrmas incorporadas proporciona mais segurança no canteiro da obra, devido à diminuição de operações in loco e à menor necessidade mão de obra.',
+  'Coberturas e fachadas em aço são soluções isolantes termoacústicas que oferecem maior conforto e menores gastos com energia.'
 ]%>
 <div class="differential-wrapper">
   <div class="steligence-container">
@@ -193,7 +190,7 @@
       <div class="differential-10">
         <p>Principais diferenciais de uma obra com Steligence®</p>
       </div>
-      <%= image_tag('logo-steligence-cor.png', style: 'width: 120px; object-fit: contain;', class: 'desktop-hidden') %>
+      <%= image_tag('logo-steligence-cor.png', style: 'width: 120px; object-fit: contain; margin-top: -88px;', class: 'desktop-hidden') %>
     </div>
   </div>
 
@@ -238,11 +235,19 @@
         <div class="catalog-event-click" id='laje-event'></div>
         <div class="catalog-event-click" id='vedacao-event'></div>
         <div class="catalog-event-click" id='envelope-event'></div>
+
+        <div class="tap-sign">
+          <div class="icon">
+            <i class="fas fa-hand-point-up"></i>
+          </div>
+          <p>clique na imagem para saber mais.</p>
+        </div>
+
       </div>
 
 
       <div class="catalog-text-box">
-        <div class="catalog-intro desktop-margin show-layer">
+        <div id="intro-margin" class="catalog-intro desktop-margin show-layer">
           <%= image_tag('logo-steligence-cor.png', style:'width: 300px;') %>
           <p>O Steligence® é a oportunidade de otimizar todos os aspectos de um projeto, comparando os principais métodos construtivos do mercado com as soluções Best-in-Class da ArcelorMittal, considerando todas as etapas construtivas.</p>
         </div>
@@ -250,13 +255,13 @@
         <div class="catalog-fundacao desktop-margin">
           <div class="catalog-description">
             <%= image_tag('square-fundacao.png') %>
-            <p>Fundações e Contenções</p>
+            <p class="fundacao-color">Fundações e Contenções</p>
             <%= render 'dash_line', locals:{ color: 'fundacao' } %>
           </div>
           <div class="fundacao-carousel">
             <div>
-              <p>Elementos Armados com Fôrmas Incorporadas</p>
-              <p>O uso e aplicação de elementos armados com fôrmas incorporadas permite a eliminação de mão de obra de carpintaria e armação na etapa de fundação, aliados a menor necessidade de movimentação de terra (escavação e reaterra). Além disso, possibilita acelerar o cronograma de obra, garantindo a qualidade e a precisão de montagem.</p>
+              <p style="" >Elementos Armados com Fôrmas Incorporadas</p>
+              <p>O uso e aplicação de elementos armados com fôrmas incorporadas permite a eliminação de mão de obra de carpintaria e armação na etapa de fundação, aliados a menor necessidade de movimentação de terra (escavação e reaterro). Além disso, possibilita acelerar o cronograma de obra, garantindo a qualidade e a precisão de montagem.</p>
             </div>
             <div>
               <p>Estaca-Prancha</p>
@@ -272,17 +277,17 @@
         <div class="catalog-piso desktop-margin">
           <div class="catalog-description">
             <%= image_tag('square-piso.png') %>
-            <p>Piso</p>
+            <p class="piso-color" >Piso</p>
             <%= render 'dash_line', locals:{ color: 'piso' } %>
           </div>
           <div class="piso-carousel">
             <div>
               <p>Tela Soldada</p>
-              <p>A aplicação em lajes e pisos possibilita aumento de produtividade na montagem das etapas estruturais e consequente redução de custos. Seu uso ainda garante maior qualidade de execução,por se tratar de processo industrializado de fabricação. Além disso, a ArcelorMittal propõe otimizações na aplicação através da produção de abrangente número de telas especiais, que podem ser fabricadas sob medida, reduzindo perdas da ordem de 20%.</p>
+              <p>A aplicação em lajes e pisos possibilita aumento de produtividade na montagem das etapas estruturais e consequente redução de custos. Seu uso ainda garante maior qualidade de execução,por se tratar de processo industrializado de fabricação. Além disso, a ArcelorMittal propõe otimizações na aplicação, através da produção de abrangente número de telas especiais - que podem ser fabricadas sob medida, reduzindo perdas da ordem de 20%.</p>
             </div>
             <div>
               <p>Dramix®</p>
-              <p>O uso de fibras de aço Dramix® garante um controle de fissuração elevado, além de proporcionar maior estabilidade e integridade às juntas de dilatação do concreto. Além disso,permite um aumento de produtividade pela redução de mão de obra e elimina cortes e perdas de aço no processo de fabricação.</p>
+              <p>O uso de fibras de aço Dramix® garante um controle de fissuração elevado, além de proporcionar maior estabilidade e integridade às juntas de dilatação do concreto. Além disso, permite um aumento de produtividade pela redução de mão de obra e elimina cortes e perdas de aço no processo de fabricação.</p>
             </div>
           </div>
         </div>
@@ -290,7 +295,7 @@
         <div class="catalog-estrutura desktop-margin">
           <div class="catalog-description">
             <%= image_tag('square-estrutura.png') %>
-            <p>Estrutura</p>
+            <p class="estrutura-color">Estrutura</p>
             <%= render 'dash_line', locals:{ color: 'estrutura' } %>
           </div>
           <div class="estrutura-carousel">
@@ -308,21 +313,21 @@
         <div class="catalog-laje desktop-margin">
           <div class="catalog-description">
             <%= image_tag('square-laje.png') %>
-            <p>Laje</p>
+            <p class="laje-color" >Laje</p>
             <%= render 'dash_line', locals:{ color: 'laje' } %>
           </div>
           <div class="laje-carousel">
             <div>
-              <p>Treilfácil®</p>
+              <p>Trelifácil®</p>
               <p>Desenvolvida para atender às exigências do mercado por produtos que racionalizem os processos construtivos e diminuam seus custos, é composta por treliça de aço, espaçadores plásticos e fôrma de aço zincado - que confere maior resistência à corrosão. A Trelifácil® possui um peso cerca de 80% menor quando comparado ao de uma vigota comum, o que oferece leveza, praticidade, qualidade e simplicidade na aplicação.</p>
             </div>
             <div>
               <p>Steel Deck - Polydeck 59S</p>
-              <p>A laje Steel Deck atua como fôrma na execução da laje e como armadura positiva depois da cura do concreto. O perfil Polydeck 59S reduz ou até mesmo elimina totalmente as escoras no momento da concretagem, gera menos resíduos e traz mais velocidade à obra, diminuindo a mãe de obra no canteiro e o transporte de insumos. O Polydeck 59S pode ser especificado para obras de estruturas metálicas ou de concreto.</p>
+              <p>A laje Steel Deck atua como fôrma na execução da laje e como armadura positiva depois da cura do concreto. O perfil Polydeck 59S reduz ou até mesmo elimina totalmente as escoras no momento da concretagem, gera menos resíduos e traz mais velocidade à obra, diminuindo a mão de obra no canteiro e o transporte de insumos. O Polydeck 59S pode ser especificado para obras de estruturas metálicas ou de concreto.</p>
             </div>
             <div>
-              <p>Cordalha de Protensão</p>
-              <p>A aplicação da protensão proporciona redução do número de pilares, maiores vãos, peças estruturais mais esbeltas e maior durabilidade da estrutura. Uma vez que as instalações hidráulica elétrica e de ar-condicionado podem ser posicionadas rente ao fundo da laje, não tendo de passar por baixo de vigas (inexistentes na solução), a distância entre os pisos fica menor, com uma economia de aproximadamente 50 cm de altura em cada andar.</p>
+              <p>Cordoalha de Protensão</p>
+              <p>A aplicação da protensão proporciona redução do número de pilares, maiores vãos, peças estruturais mais esbeltas e maior durabilidade da estrutura. Uma vez que as instalações hidráulica, elétrica e de ar-condicionado podem ser posicionadas rente ao fundo da laje, não tendo de passar por baixo de vigas (inexistentes na solução), a distância entre os pisos fica menor, com uma economia de aproximadamente 50 cm de altura em cada andar.</p>
             </div>
           </div>
         </div>
@@ -330,17 +335,17 @@
         <div class="catalog-vedacao desktop-margin">
           <div class="catalog-description">
             <%= image_tag('square-vedacao.png') %>
-            <p>Vedação</p>
+            <p class="vedacao-color" >Vedação</p>
             <%= render 'dash_line', locals:{ color: 'envelope' } %>
           </div>
           <div class="vedacao-carousel">
             <div>
               <p>Murfor®</p>
-              <p>Reforço de aço para alvenaria produzido pela Belgo Bekaert Arames, que proporciona um melhor desempenho estrutural, previne trincas, aumenta a resistência e oferece novas possibilidades arquitetônicas. Sua aplicação reduz a necessidade de manutenção do edifício e oferece melhor durabilidade construtiva.</p>
+              <p>Reforço de aço para alvenaria produzido pela Belgo Bekaert Arames, que proporciona melhor desempenho estrutural, previne trincas, aumenta a resistência e oferece novas possibilidades arquitetônicas. Sua aplicação reduz a necessidade de manutenção do edifício e oferece melhor durabilidade construtiva.</p>
             </div>
             <div>
               <p>Drywall e Light Steel Framing</p>
-              <p>Os sistemas em perfis leves galvanizados propiciam facilidade de montagem e rapidez de execução, com a consequente redução de prazos e de custos. Conformados a frio, a partir de chapas galvanizadas por sequência de rolos, oferecem resistência à corrosão e proporcionam excelente custo/benefício. São utilizados nas vedações internas  e externas de edifícios em conjunto com chapas delgadas e isolantes térmicos trazendo ganhos em conforto térmico e em velocidade de obra.</p>
+              <p>Os sistemas em perfis leves galvanizados propiciam facilidade de montagem e rapidez de execução, com a consequente redução de prazos e de custos. Conformados a frio, a partir de chapas galvanizadas por sequência de rolos, oferecem resistência à corrosão e proporcionam excelente custo/benefício. São utilizados nas vedações internas e externas de edifícios, em conjunto com chapas delgadas e isolantes térmicos, trazendo ganhos em conforto térmico e em velocidade de obra.</p>
             </div>
           </div>
         </div>
@@ -348,13 +353,13 @@
         <div class="catalog-envelope desktop-margin">
           <div class="catalog-description">
             <%= image_tag('square-envelope.png') %>
-            <p>Envelope</p>
+            <p class="envelope-color" >Envelope</p>
             <%= render 'dash_line', locals:{ color: 'envelope' } %>
           </div>
           <div class="envelope-carousel">
             <div>
               <p>Global Roof e Global Wall</p>
-              <p>As coberturas e fachadas GlobalRoof e GlobalWall Perfilor compreendem sistemas-sanduíche formados por perfis metálicos, mantas isolantes, chapas perfuradas e membranas; projetados para oferecer elevado isolamento térmico, acústico e, dependendo da opção, absorção acústica. Os sistemas GlobalRoof são únicos quando o assunto é acústica em coberturas metálicas. Disponíveis em diversas espessuras de chapas e de acabamentos, como PVDF resistente a UV, brancos com alto SRI e em poliuretano de alta camada (Max 60).</p>
+              <p>As coberturas e fachadas GlobalRoof e GlobalWall Perfilor compreendem sistemas-sanduíche formados por perfis metálicos, mantas isolantes, chapas perfuradas e membranas; projetados para oferecer elevado isolamento térmico, acústico e, dependendo da opção, absorção acústica. Os sistemas GlobalRoof são únicos quando o assunto é acústica em coberturas metálicas. Disponíveis em diversas espessuras de chapas e de acabamentos, como PVDF resistente a UV, brancos com alto SRI e em poliuretano de alta camada (Max 60), entre outros.</p>
             </div>
             <div>
               <p>Painéis Termoacústicos Termilor</p>
@@ -362,7 +367,7 @@
             </div>
             <div>
               <p>Magnelis®</p>
-              <p>Revestimento metálico inovador, que possui camada de proteção estável e duradoura oferecendo maior proteção em bordas cortadas e perfurações. Seu uso resulta em uma proteção altamente eficaz contra corrosão, sendo opção para aplicações externas e internas como coberturas, terças de telhado, revestimentos de fachadas, fôrma colaborante steel deck, perfis leves, chapas expandidas ou perfuradas, entre outros. Magnelis® é recomendado para o uso em ambiente agrícola, em galpões para cultura de animais, onde há presença de amônia. Graças à sua exclusiva composição de zinco, 3,5% de alumínio e 3% de magnésio, Magnelis® responde à demanda por maior durabilidade e redução dos custos de manutenção.</p>
+              <p>Revestimento metálico inovador, que possui camada de proteção estável e duradoura oferecendo maior proteção em bordas cortadas e perfurações. Seu uso resulta em uma proteção altamente eficaz contra corrosão, sendo opção para aplicações externas e internas como coberturas, terças de telhado, revestimentos de fachadas, fôrma colaborante steel deck, perfis leves, chapas expandidas ou perfuradas, entre outros. Magnelis® é recomendado para o uso em ambiente agrícola, como galpões para cultura de animais, onde há presença de amônia. Graças à sua exclusiva composição de zinco, 3,5% de alumínio e 3% de magnésio, Magnelis® responde à demanda por maior durabilidade e redução dos custos de manutenção.</p>
             </div>
           </div>
         </div>
@@ -411,7 +416,7 @@
 <!-- INICIO CONTATO -->
 <div id="contato">
   <div class="text-wrapper">
-    <p> A evolução da contrução civil. Disponível para um futuro que já começou.</p>
+    <p> A evolução da construção civil. Disponível para um futuro que já começou.</p>
   </div>
   <div class="form-box">
     <p>Deixe suas informações para entrarmos em contato com você.</p>
@@ -437,3 +442,11 @@
 
 <%= javascript_pack_tag 'animations' %>
 
+<script>
+  let handIcon = document.querySelector('.icon');
+
+  let moveHand = () => {
+    handIcon.classList.toggle('move-icon');
+  }
+  setInterval(moveHand, 1000);
+</script>

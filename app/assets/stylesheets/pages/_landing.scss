@@ -285,8 +285,8 @@
   p{
     line-height: 1.5rem;
     font-size: 12px;
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-left: 110px;
+    margin-top: 22px;
     width: 100px;
   }
 }
@@ -710,15 +710,39 @@
   p{
     font-size: 14px;
     margin-top: 20px;
-    font-weight: bold;
   }
+}
+
+.tap-sign{
+  pointer-events: none;
+  text-align: right;
+  position: absolute;
+  left: 250px;
+  top: 40px;
+  color: $steligence-orange;
+  font-size: 30px;
+  p{
+    width: 50px;
+    text-align: right;
+    display: inline-block;
+    font-size: 16px;
+  }
+}
+
+.icon{
+  transition: 1s;
+}
+
+.move-icon{
+  transform: translate(0, -15px);
+  transition: 1s;
 }
 
 // FIM CATALOGO -->
 
 // INICIO DEPOIMENTOS -->
 #depoimentos {
-  height: 487px;
+  height: 705px;
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -728,7 +752,6 @@
   white-space: nowrap;
   margin: 0;
   margin-bottom: 0;
-  font-weight: bold;
   display: inline-block;
   padding: 0;
   margin-right: 100%;
@@ -745,17 +768,21 @@
 }
 
 .wilmotte{
-  background-image: image-url('Wilmotte-JM.png');
+  background-image: image-url('Wilmotte-JM-mobile.png');
   background-repeat: no-repeat;
   background-position: 55% 50%;
   color: white;
   div{
     padding: 16px;
+    padding-top: 323px;
+    padding-left: 33px;
     height: 100%;
-    width: 55%;
+    width: 56%;
     p{
-      font-size: 15px;
-      font-weight: bold;
+      &:first-child{
+        margin-bottom: 8px;
+      }
+      font-size: 18px;
     }
     div{
       padding: 0;
@@ -765,16 +792,21 @@
 }
 
 .grohmann{
-  background-image: image-url('Grohmann-M.png');
+  background-image: image-url('Grohmann-M-mobile.png');
   background-repeat: no-repeat;
   background-position: 57% 50%;
   div{
     padding: 15px;
+    padding-top: 55px;
+    padding-left: 33px;
     height: 100%;
-    width: 55%;
+    width: 70%;
     p{
-      font-size: 16px;
-      font-weight: bold;
+      &:first-child{
+        margin-bottom: 8px;
+        color: $steligence-gray;
+      }
+      font-size: 18px;
     }
     div{
       padding: 0;
@@ -784,16 +816,21 @@
 }
 
 .ludkovsky{
-  background-image: image-url('Ludkovsky-G.png');
+  background-image: image-url('Ludkovsky-G-mobile.png');
   background-repeat: no-repeat;
   background-position: 54% 50%;
   div{
     padding: 15px;
+    padding-top: 30px;
+    padding-left: 33px;
     height: 100%;
-    width: 55%;
+    width: 53%;
     p{
-      font-size: 16px;
-      font-weight: bold;
+      &:first-child{
+        margin-bottom: 8px;
+      }
+      font-size: 18px;
+      width: 96%;
     }
     div{
       padding: 0;
@@ -899,6 +936,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .desktop-banner{
+    flex-direction: row !important;
+    margin: 0 calc(50vw - 450px);
   }
 
   .desktop-row-wrapper{
@@ -1051,10 +1093,24 @@
     margin: 0;
   }
 
+  #intro-margin{
+    margin-top: 50px;
+    width: 400px;
+    line-height: 1.8rem;
+    font-size: 16px;
+    margin-left: calc(50% - 380px);
+    img{
+      margin-bottom: 16px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+
   .catalog-text-box{
     padding: 0;
     .desktop-margin{
-      width: 300px;
+      width: 320px;
       margin-top: 100px;
       margin-left: calc(50% - 330px);
     }
@@ -1065,6 +1121,31 @@
     .slick-dots{
       bottom: -70px;
     }
+  }
+
+  .tap-sign{
+    pointer-events: none;
+    text-align: right;
+    position: absolute;
+    left: 260px;
+    top: 200px;
+    color: $steligence-orange;
+    font-size: 30px;
+    p{
+      width: 100px;
+      text-align: right;
+      display: inline-block;
+      font-size: 16px;
+    }
+  }
+
+  .icon{
+    transition: 1s;
+  }
+
+  .move-icon{
+    transform: translate(0, -15px);
+    transition: 1s;
   }
 
   .catalog-row-wrapper{
@@ -1092,7 +1173,13 @@
   }
 
   // DEPOIMENTOS
+  #depoimentos{
+    height: 487px;
+  }
   .wilmotte{
+    background-image: image-url('Wilmotte-JM.png');
+    background-repeat: no-repeat;
+    background-position: 55% 50%;
     div{
       padding: 70px;
       p{
@@ -1117,6 +1204,9 @@
   }
 
   .grohmann{
+    background-image: image-url('Grohmann-M.png');
+    background-repeat: no-repeat;
+    background-position: 57% 50%;
     div{
      padding: 70px;
      p{
@@ -1141,6 +1231,9 @@
   }
 
   .ludkovsky{
+    background-image: image-url('Ludkovsky-G.png');
+    background-repeat: no-repeat;
+    background-position: 54% 50%;
     div{
      padding: 70px;
      p{
