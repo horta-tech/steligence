@@ -194,8 +194,9 @@
   transition: 0.5s;
 }
 
+
 .slick-dots{
-  bottom: 16px;
+  bottom: 50px;
 }
 
 .slick-dots li button:before{
@@ -992,7 +993,7 @@
     display: block;
     position: absolute;
     bottom: 0px;
-    right: calc(50vw - 450px);
+    right: calc(50vw - 600px);
     z-index: 1000;
   }
 

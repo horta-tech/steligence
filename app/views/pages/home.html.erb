@@ -5,6 +5,7 @@
       <%= image_tag('fale-conosco.png', class: 'fale-conosco-image') %>
     <% end %>
   </div>
+
   <div class="banner-carousel">
     <div id="main-banner" style="background: url(<%= image_path('banner-01.png') %>); background-position: 30% 50%;">
       <div class="desktop-row-wrapper desktop-banner">
@@ -31,6 +32,10 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="main-banner" style="background: url(<%= image_path('banner-01.png') %>); background-position: 30% 50%;">
+      <%= video_tag "arcelor_video_comp.mp4", autoplay: "autoplay",controls: true, muted: "true", loop: "loop", height: "100%", width: "auto", playsinline: "true", id:"main-video" %>
     </div>
 
     <div id="main-banner" class="banner-02-bg">
