@@ -1097,7 +1097,8 @@
   .banner3-logo{
     width: 90%;
     height: 90%;
-    object-fit: scale-down;
+    max-width: 90%;
+    max-height: 90%;
     padding: 0 14%;
     margin-top: 100px;
     margin-left: 10%;
