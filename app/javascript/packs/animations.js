@@ -13,6 +13,7 @@
   let laje = document.querySelector('.laje');
   let vedacao = document.querySelector('.vedacao');
   let envelope = document.querySelector('.envelope');
+  let hover = document.querySelector('.hover');
 
   // TEXTOS
   let catalogIntro = document.querySelector('.catalog-intro');
@@ -24,6 +25,8 @@
   let catalogEnvelope = document.querySelector('.catalog-envelope');
 
   let allLayers = [fundacao, piso, estrutura, laje, vedacao, envelope, catalogIntro, catalogFundacao, catalogPiso, catalogEstrutura, catalogLaje, catalogVedacao, catalogEnvelope];
+
+  // CLICK EVENTS
 
   outEvent.addEventListener('click', () => {
     removeLayers();
@@ -66,8 +69,65 @@
     catalogEnvelope.classList.toggle('show-layer');
   });
 
+  // HOVER EVENTS
+
+  fundacaoEvent.addEventListener('mouseover', () => {
+    hover.classList.toggle('fundacao')
+    hover.classList.toggle('show-layer');
+  });
+  fundacaoEvent.addEventListener('mouseout', () => {
+    hover.classList.toggle('show-layer');
+    hover.classList.toggle('fundacao')
+  });
+
+  pisoEvent.addEventListener('mouseover', () => {
+    hover.classList.toggle('piso')
+    hover.classList.toggle('show-layer');
+  });
+  pisoEvent.addEventListener('mouseout', () => {
+    hover.classList.toggle('piso')
+    hover.classList.toggle('show-layer');
+  });
+
+  estruturaEvent.addEventListener('mouseover', () => {
+    hover.classList.toggle('estrutura')
+    hover.classList.toggle('show-layer');
+  });
+  estruturaEvent.addEventListener('mouseout', () => {
+    hover.classList.toggle('estrutura')
+    hover.classList.toggle('show-layer');
+  });
+
+  lajeEvent.addEventListener('mouseover', () => {
+    hover.classList.toggle('laje')
+    hover.classList.toggle('show-layer');
+  });
+  lajeEvent.addEventListener('mouseout', () => {
+    hover.classList.toggle('laje')
+    hover.classList.toggle('show-layer');
+  });
+
+  vedacaoEvent.addEventListener('mouseover', () => {
+    hover.classList.toggle('vedacao')
+    hover.classList.toggle('show-layer');
+  });
+  vedacaoEvent.addEventListener('mouseout', () => {
+    hover.classList.toggle('vedacao')
+    hover.classList.toggle('show-layer');
+  });
+
+  envelopeEvent.addEventListener('mouseover', () => {
+    hover.classList.toggle('envelope')
+    hover.classList.toggle('show-layer');
+  });
+  envelopeEvent.addEventListener('mouseout', () => {
+    hover.classList.toggle('envelope')
+    hover.classList.toggle('show-layer');
+  });
+
   let removeLayers = () => {
     allLayers.forEach((layer) => {
       layer.classList.remove('show-layer');
     });
   };
+
