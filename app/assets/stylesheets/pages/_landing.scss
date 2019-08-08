@@ -761,6 +761,12 @@
   pointer-events: auto;
 }
 
+.show-layer-hover{
+  opacity: 0.5;
+  transition: 0.5s ease;
+  pointer-events: auto;
+}
+
 .catalog-intro{
   padding: 0 8px;
   p{
