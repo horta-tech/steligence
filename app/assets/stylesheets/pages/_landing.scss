@@ -459,45 +459,51 @@
   bottom: 0;
 }
 
+.hover {
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+
 .fundacao{
   background-image: image-url('fundacao-bg.png');
   opacity: 0;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
   background-position: 60% 50%;
 }
 
 .piso{
   background-image: image-url('piso-bg.png');
   opacity: 0;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
   background-position: 60% 50%;
 }
 
 .estrutura{
   background-image: image-url('estrutura-bg.png');
   opacity: 0;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
   background-position: 60% 50%;
 }
 
 .laje{
   background-image: image-url('laje-bg.png');
   opacity: 0;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
   background-position: 60% 50%;
 }
 
 .vedacao{
   background-image: image-url('vedacao-bg.png');
   opacity: 0;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
   background-position: 60% 50%;
 }
 
 .envelope{
   background-image: image-url('envelope-bg.png');
   opacity: 0;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
   background-position: 60% 50%;
 }
 
@@ -761,7 +767,7 @@
 
 .show-layer{
   opacity: 1;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
   pointer-events: auto;
 }
 
