@@ -7,7 +7,7 @@
 
 <div class="<%= 'logged-'if user_signed_in? %>nav-wrapper" id="nav-wrapper">
   <div class="navbar <%= 'logged-navbar' if user_signed_in? %>" id="navbar">
-    <div class="container">
+    <div class="stel-container">
       <div class="nav-items d-none d-md-flex">
         <div class="nav-item-left">
           <%= link_to '#inicio', class: "navbar-links" do %>
@@ -15,14 +15,14 @@
           <% end %>
           <%= link_to "PILARES", '#pilares', class: "navbar-links" %>
           <%= link_to "DIFERENCIAIS", '#diferenciais', class: "navbar-links" %>
-          <%= link_to "CATÁLOGO", '#catalogo', class: "navbar-links" %>
+          <%= link_to "SOLUÇÕES EM AÇO", '#catalogo', class: "navbar-links" %>
           <%= link_to "DEPOIMENTOS", '#depoimentos', class: "navbar-links" %>
           <%= link_to "CONTATO", '#contato', class: "navbar-links" %>
         </div>
         <div class="nav-item-right">
           <!-- Links na lateral direita da navbar -->
           <%= link_to root_path, class: "nav-item-logo" do %>
-            <%= image_tag 'arcelor-logo.svg', class: "logo" %>
+            <%= image_tag 'arcelor-icon.png', class: "logo" %>
           <% end %>
         </div>
       </div>
