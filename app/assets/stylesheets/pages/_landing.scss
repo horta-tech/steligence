@@ -3,6 +3,10 @@
   width: 900px;
 }
 
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
 #main-video {
   width: 100%;
 }
@@ -785,6 +789,21 @@
   }
 }
 
+.handbook-box {
+  position: absolute;
+  cursor: pointer;
+  left: 0px;
+  bottom: -40px;
+  width: 300px;
+  a {
+    font-size: 15px;
+    color: $steligence-orange;
+    &:hover {
+      color: $steligence-orange;
+    }
+  }
+}
+
 .tap-sign{
   pointer-events: none;
   text-align: right;
@@ -1087,7 +1106,7 @@
     }
     .sub-header{
       margin-top: 22%;
-      margin-left: 20%;
+      // margin-left: 20%;
       margin-right: 0;
       h5{
         font-family: $vagrounded-regular;
@@ -1102,7 +1121,9 @@
 
   .banner3-logo{
     padding: 0;
-    margin-left: 10%;
+    width: 75%;
+    height: 75%
+    // margin-left: 10%;
   }
 
   .banner1-logo{
@@ -1214,6 +1235,17 @@
   // CATALOGO
   #catalogo{
     margin: 0;
+  }
+
+
+  #pdf-wrapper {
+    width: 100%;
+    height: 50px;
+    background-color: #C2C4C2;
+  }
+
+  .handbook-box {
+
   }
 
   .catalog-logo{
