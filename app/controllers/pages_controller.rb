@@ -10,6 +10,8 @@ class PagesController < ApplicationController
   end
 
   def download_handbook
+    PdfBacklog.create
+
     send_file(
     "#{Rails.root}/app/assets/files/Handbook_2018_web.pdf",
     filename: "Handbook_2018_web.pdf",

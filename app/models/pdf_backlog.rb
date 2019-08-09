@@ -1,0 +1,2 @@
+class PdfBacklog < ApplicationRecord
+end
