@@ -26,6 +26,8 @@ gem 'highcharts-rails'
 gem "chartkick"
 gem "groupdate"
 
+# gem 'secure_headers'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

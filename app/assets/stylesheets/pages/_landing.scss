@@ -55,9 +55,20 @@ img {
   margin-top: 100px;
 }
 
+.banner-01-bg{
+  background: image_url('banner-01.png');
+  background-position: 30% 50% !important;
+}
+
+
 .banner-02-bg{
   background: image_url('banner-03-alt.png');
   background-position: 60% 0 !important;
+}
+
+.banner-03-bg{
+  background: image-url('banner-02.png');
+  background-position: 70% 50% !important;
 }
 
 .banner3-logo{
