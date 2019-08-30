@@ -1,13 +1,16 @@
 <div class="container">
   <h1 class="text-center">Admin's area</h1>
-  <h2>Dados de Leads cadastrados</h2>
+  <h2>Download de relatórios de cadastros</h2>
 
-  <%= link_to "Relatorio de Leads em CSV", leads_path(format: "csv"), class: "btn btn-primary" %>
-  <%= link_to "Relatorio de Leads em XLS", leads_path(format: "xls"), class: "btn btn-success" %>
-  <%= link_to "Relatorio de Leads em XLSX", leads_path(format: "xlsx"), class: "btn btn-info" %>
+  <%= link_to "Relatorio de cadastros em CSV", leads_path(format: "csv"), class: "btn btn-primary" %>
+  <%= link_to "Relatorio de cadastros em XLS", leads_path(format: "xls"), class: "btn btn-success" %>
+  <%= link_to "Relatorio de cadastros em XLSX", leads_path(format: "xlsx"), class: "btn btn-info" %>
   <br>
   <br>
-    <h3> Gráfico de leads: </h3>
+    <h3> Gráfico de cadastros: </h3>
+    <p>Total de cadastros: <%= Lead.all.count %></p>
     <%= area_chart Lead.group_by_day(:created_at).count, width: "100%", height: "500px" %>
-    <p>Total: <%= Lead.all.count %></p>
+    <h3> Gráfico de downloads do catálogo: </h3>
+    <p>Total de catálogos baixados: <%= PdfBacklog.count %></p>
+    <%= area_chart PdfBacklog.group_by_day(:created_at).count, width: "100%", height: "500px" %>
 </div>
