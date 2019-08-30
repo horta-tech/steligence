@@ -7,7 +7,7 @@ class LeadsController < ApplicationController
     respond_to do |format|
       format.html
       format.csv { send_data Lead.to_csv }
-      format.xls { send_data Lead.to_csv }
+      format.xls
       format.xlsx
     end
   end
