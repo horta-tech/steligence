@@ -19,7 +19,7 @@
         <Cell><Data ss:Type="String"><%= lead.email %></Data></Cell>
         <Cell><Data ss:Type="String"><%= lead.telefone %></Data></Cell>
         <Cell><Data ss:Type="String"><%= lead.empresa %></Data></Cell>
-        <Cell><Data ss:Type="Number"><%= lead.created_at.strftime("%Y-%m-%d %H:%M:%S") %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= lead.created_at.strftime("%Y-%m-%d %H:%M:%S") %></Data></Cell>
       </Row>
     <% end %>
     </Table>
