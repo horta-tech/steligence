@@ -1,0 +1,11 @@
+wb = xlsx_package.workbook
+
+wb.add_worksheet(name: "Leads") do |sheet|
+  # this is the head row of your spreadsheet
+  sheet.add_row %w(Nome Email Telefone Empresa Data)
+
+  # each user is a row on your spreadsheet
+  @leads.each do |lead|
+    sheet.add_row [lead.nome, lead.email, lead.telefone, lead.empresa, lead.created_at.strftime("%Y-%m-%d %H:%M:%S")]
+  end
+end

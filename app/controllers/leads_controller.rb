@@ -8,6 +8,7 @@ class LeadsController < ApplicationController
       format.html
       format.csv { send_data Lead.to_csv }
       format.xls { send_data Lead.to_csv }
+      format.xlsx
     end
   end
 

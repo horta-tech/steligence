@@ -26,6 +26,10 @@ gem 'highcharts-rails'
 gem "chartkick"
 gem "groupdate"
 
+gem 'rubyzip'
+gem 'axlsx'
+gem 'axlsx_rails'
+
 # gem 'secure_headers'
 
 group :development do
