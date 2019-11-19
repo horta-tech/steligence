@@ -452,19 +452,19 @@
 
 <!-- INICIO CONTATO -->
 <div id="contato">
-  <div class="text-wrapper">
+<!--   <div class="text-wrapper">
     <p> A evolução da construção civil. Disponível para um futuro que já começou.</p>
   </div>
   <div class="form-box">
     <p>Deixe suas informações para entrarmos em contato com você.</p>
-    <%= simple_form_for @lead do |lead| %>
-      <%= lead.input :nome, label: false, placeholder: "Nome", input_html: { class: "steligence-input" } %>
-      <%= lead.input :empresa, label: false, placeholder: "Empresa", input_html: { class: "steligence-input" } %>
-      <%= lead.input :email, label: false, placeholder: "Email", input_html: { class: "steligence-input" } %>
-      <%= lead.input :telefone, label: false, placeholder: "Telefone", input_html: { class: "steligence-input" } %>
-      <%= lead.submit "CADASTRAR", class: 'contact-button' %>
-    <% end %>
-  </div>
+    <%#= simple_form_for @lead do |lead| %>
+      <%#= lead.input :nome, label: false, placeholder: "Nome", input_html: { class: "steligence-input" } %>
+      <%#= lead.input :empresa, label: false, placeholder: "Empresa", input_html: { class: "steligence-input" } %>
+      <%#= lead.input :email, label: false, placeholder: "Email", input_html: { class: "steligence-input" } %>
+      <%#= lead.input :telefone, label: false, placeholder: "Telefone", input_html: { class: "steligence-input" } %>
+      <%#= lead.submit "CADASTRAR", class: 'contact-button' %>
+    <%# end %>
+  </div> -->
 </div>
 <!-- FIM CONTATO -->
 </div>
@@ -472,8 +472,7 @@
   <div class="contact-options">
     <p><%= link_to 'Sobre a ArcelorMittal', 'http://brasil.arcelormittal.com.br/' %></p>
     <p><%= link_to 'Loja ArcelorMittal', 'https://loja.arcelormittal.com.br' %></p>
-    <p><%= link_to 'Atendimento ao Cliente', 'http://brasil.arcelormittal.com.br/fale-conosco' %></p>
-    <p><%= link_to 'Contato', '#contato' %></p>
+    <p><%= link_to 'Atendimento ao Cliente', 'https://brasil.arcelormittal.com.br/contato' %></p>
   </div>
 </div>
 
