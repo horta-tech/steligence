@@ -1,1 +1,1 @@
-Rails app generated with Hortatech Template, created by rayancastro.
+Rails app by Hortatech, created by rayancastro.
